@@ -1,8 +1,160 @@
+.bs-navbar {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0; }
+  .bs-navbar div {
+    padding-left: 0;
+    padding-right: 0; }
+    .bs-navbar div .navbar-header button {
+      margin-top: 33px; }
+    .bs-navbar div .navbar-header .navbar-brand {
+      line-height: 100px;
+      height: 100px;
+      padding-top: 5px; }
+      .bs-navbar div .navbar-header .navbar-brand p {
+        position: absolute;
+        line-height: 20px;
+        font-size: 1.3rem;
+        text-transform: uppercase; }
+  .bs-navbar .navbar-nav {
+    margin-right: -40px; }
+    .bs-navbar .navbar-nav li:first-child {
+      margin-left: 100px; }
+    .bs-navbar .navbar-nav li {
+      display: inline-block; }
+      .bs-navbar .navbar-nav li a {
+        line-height: 100px;
+        height: 100px;
+        padding-top: 0;
+        color: #a9a9a9;
+        font-family: Yanone, Tahoma, Arial, sans-serif;
+        font-size: 1.8rem; }
+        .bs-navbar .navbar-nav li a:hover {
+          text-decoration: none;
+          color: #db7030; }
+    .bs-navbar .navbar-nav li.active a {
+      color: #db7030; }
+
+@media screen and (max-width: 1199px) {
+  .bs-navbar ul.navbar-nav {
+    margin-right: -80px; }
+
+  .bs-navbar ul.navbar-nav li:first-child {
+    margin-left: 0px; }
+
+  .bs-navbar ul.navbar-nav li a {
+    padding: 0px 9px; }
+
+  .navbar-brand p {
+    font-size: 1.1rem; } }
+@media screen and (max-width: 991px) {
+  .bs-navbar ul.navbar-nav {
+    margin-right: -20px; }
+
+  .bs-navbar ul.navbar-nav li:first-child {
+    margin-left: 0px; }
+
+  .bs-navbar ul.navbar-nav li a {
+    padding: 0px 7px;
+    font-size: 1.5rem; }
+
+  .navbar-brand p {
+    font-size: 0.8rem; } }
+footer {
+  margin: 0 auto 20px auto;
+  padding: 15px 0;
+  background: #565656;
+  border-top: 1px solid #363636; }
+  footer .copyright {
+    color: #ddd;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #262626; }
+    footer .copyright a {
+      font-family: Yanone, Tahoma, Arial, sans-serif;
+      color: #f7f7f7;
+      font-size: 1.6rem;
+      letter-spacing: 1px; }
+      footer .copyright a:hover {
+        color: #ddd;
+        text-decoration: none; }
+    footer .copyright p {
+      margin: 0; }
+  footer .footer-nav {
+    margin-top: 10px;
+    list-style: none;
+    text-align: right; }
+    footer .footer-nav li {
+      display: inline;
+      margin-left: 8px; }
+      footer .footer-nav li a {
+        font-family: Arial, sans-serif;
+        color: #f7f7f7;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #262626;
+        cursor: pointer; }
+        footer .footer-nav li a:hover {
+          color: #ddd;
+          text-decoration: none; }
+
+@media screen and (max-width: 678px) {
+  footer .copyright {
+    text-align: center;
+    font-size: 1rem; }
+    footer .copyright a {
+      font-size: 1.6rem; }
+  footer .footer-nav {
+    text-align: center; }
+    footer .footer-nav li {
+      display: inline; }
+      footer .footer-nav li a {
+        font-size: 1rem; } }
+html {
+  font-size: 62.5%; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  *:focus {
+    outline: 0; }
+
 body {
   color: #747474;
   font-size: 14px;
+  font-size: 1.4rem;
   font-family: Arial, sans-serif;
   line-height: 20px;
-  background-color: #8bc34a; }
+  background-color: #c3c3c3; }
+
+/*=====BACKGROUND PATTERNS=====*/
+.mosaic {
+  background-image: url(../img/backgrounds/pattern-1.png); }
+
+.tiles {
+  background-image: url(../img/backgrounds/pattern-2.png); }
+
+.small-grid {
+  background-image: url(/images/pattern-3.png); }
+
+.lines {
+  background-image: url(../img/backgrounds/pattern-4.png); }
+
+.medium-grid {
+  background-image: url(../img/backgrounds/pattern-5.png); }
+
+.wood {
+  background-image: url(../img/backgrounds/pattern-6.jpg); }
+
+.vertical-lines {
+  background-image: url(../img/backgrounds/pattern-7.png); }
+
+.noise {
+  background-image: url(../img/backgrounds/pattern-8.jpg); }
+
+.wrapper {
+  margin-top: 20px;
+  padding: 30px 40px 30px 40px;
+  background-color: #f7f7f7; }
 
 /*# sourceMappingURL=style.css.map */

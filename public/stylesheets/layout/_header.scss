@@ -1,0 +1,100 @@
+.bs-navbar {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+
+    div {
+        padding-left: 0;
+        padding-right: 0;
+
+        .navbar-header {
+            button {
+                margin-top: 33px;
+            }
+            .navbar-brand {
+                line-height: 100px;
+                height: 100px;
+                padding-top: 5px;
+
+                img {
+                }
+
+                p {
+                    position: absolute;
+                    line-height: 20px;
+                    // bottom: 0px;
+                    // left: 79px;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin-right: -40px;
+        li:first-child {
+            margin-left: 100px;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                line-height: 100px;
+                height: 100px;
+                padding-top: 0;
+                color: #a9a9a9;
+                font-family: $font-main;
+                font-size: 1.8rem;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $main;
+                }
+            }
+        }
+        li.active {
+            a {
+                color: $main;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .bs-navbar ul.navbar-nav {
+        margin-right: -80px;
+    }
+
+    .bs-navbar ul.navbar-nav li:first-child {
+        margin-left: 0px;
+    }
+
+    .bs-navbar ul.navbar-nav li a {
+        padding: 0px 9px;
+    }
+
+    .navbar-brand p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bs-navbar ul.navbar-nav {
+        margin-right: -20px;
+    }
+
+    .bs-navbar ul.navbar-nav li:first-child {
+        margin-left: 0px;
+    }
+
+    .bs-navbar ul.navbar-nav li a {
+        padding: 0px 7px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand p {
+        font-size: 0.8rem;
+    }
+}
