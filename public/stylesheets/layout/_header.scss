@@ -22,9 +22,8 @@
                 p {
                     position: absolute;
                     line-height: 20px;
-                    // bottom: 0px;
-                    // left: 79px;
-                    font-size: 1.3rem;
+                    left: 50px;
+                    font-size: 1.2rem;
                     text-transform: uppercase;
                 }
             }
@@ -74,10 +73,6 @@
     .bs-navbar ul.navbar-nav li a {
         padding: 0px 9px;
     }
-
-    .navbar-brand p {
-        font-size: 1.1rem;
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -95,6 +90,56 @@
     }
 
     .navbar-brand p {
-        font-size: 0.8rem;
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        width: 80%;
+    }
+
+    .navbar-nav {
+        margin: 0px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar-nav li a {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand p {
+        left: 20px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar-header button {
+        margin-right: 0 !important;
+    }
+
+    .navbar-nav li a {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand p {
+        left: 10px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .navbar-brand img {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar-nav li a {
+        font-size: 0.6rem !important;
     }
 }
