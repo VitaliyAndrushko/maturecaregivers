@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .separator-line.col-xs-12
+    .welcome-block.col-xs-12
+        .content.col-sm-7
+            p Welcome to
+                span  Mature Caregivers
+            p.description  We provide geriatric expertise and reliable in-home eldercare from
+              |certified providers age 50+. To inquire about services, click the
+              |“SEARCH NOW" button or call us at (888) 320-6700.
+        .welcome-btn.col-sm-5
+            a(href='/searchcare') SEARCH NOW
+    .separator-line.col-xs-12

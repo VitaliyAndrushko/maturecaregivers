@@ -1,3 +1,10 @@
+.separator-line {
+  border: none;
+  height: 15px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  background: url(/images/separator.png) repeat; }
+
 .bs-navbar {
   border-left: 0;
   border-right: 0;
@@ -14,7 +21,8 @@
       .bs-navbar div .navbar-header .navbar-brand p {
         position: absolute;
         line-height: 20px;
-        font-size: 1.3rem;
+        left: 50px;
+        font-size: 1.2rem;
         text-transform: uppercase; }
   .bs-navbar .navbar-nav {
     margin-right: -40px; }
@@ -43,10 +51,7 @@
     margin-left: 0px; }
 
   .bs-navbar ul.navbar-nav li a {
-    padding: 0px 9px; }
-
-  .navbar-brand p {
-    font-size: 1.1rem; } }
+    padding: 0px 9px; } }
 @media screen and (max-width: 991px) {
   .bs-navbar ul.navbar-nav {
     margin-right: -20px; }
@@ -59,7 +64,36 @@
     font-size: 1.5rem; }
 
   .navbar-brand p {
-    font-size: 0.8rem; } }
+    font-size: 1rem !important; } }
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 80%; }
+
+  .navbar-nav {
+    margin: 0px !important;
+    text-align: center; } }
+@media screen and (max-width: 550px) {
+  .navbar-nav li a {
+    font-size: 1rem !important; } }
+@media screen and (max-width: 480px) {
+  .navbar-brand p {
+    left: 20px !important; } }
+@media screen and (max-width: 420px) {
+  .navbar-header button {
+    margin-right: 0 !important; }
+
+  .navbar-nav li a {
+    font-size: 0.8rem !important; } }
+@media screen and (max-width: 400px) {
+  .navbar-brand p {
+    left: 10px !important;
+    font-size: 0.7rem !important; }
+
+  .navbar-brand img {
+    padding: 10px; } }
+@media screen and (max-width: 360px) {
+  .navbar-nav li a {
+    font-size: 0.6rem !important; } }
 footer {
   margin: 0 auto 20px auto;
   padding: 15px 0;
@@ -97,7 +131,7 @@ footer {
           color: #ddd;
           text-decoration: none; }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   footer .copyright {
     text-align: center;
     font-size: 1rem; }
@@ -109,6 +143,42 @@ footer {
       display: inline; }
       footer .footer-nav li a {
         font-size: 1rem; } }
+.welcome-block {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  font-size: 2.4rem;
+  color: #6b6b6b; }
+  .welcome-block .content {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .welcome-block .content p span {
+      color: #db7030; }
+    .welcome-block .content .description {
+      margin: 0 0 15px;
+      color: #747474;
+      font-size: 1.4rem;
+      font-family: Arial, sans-serif;
+      line-height: 20px; }
+  .welcome-block .welcome-btn {
+    text-align: right; }
+    .welcome-block .welcome-btn a {
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      padding: 15px 20px;
+      background-color: #4e4e4e;
+      border-top: 3px solid #6e6e6e;
+      border-bottom: 3px solid #6e6e6e;
+      font-family: Yanone, Arial, sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-shadow: 1px 1px #252525;
+      color: #f7f7f7; }
+      .welcome-block .welcome-btn a:hover {
+        color: #ddd;
+        text-decoration: none; }
+
 html {
   font-size: 62.5%; }
 
