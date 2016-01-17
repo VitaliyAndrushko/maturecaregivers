@@ -104,7 +104,7 @@ btn-main-arrow-image {
   background: url(../img/arrow-btn.png) no-repeat; }
 
 dividers-image, .separator-line {
-  background: url(../img/separator.png) repeat; }
+  background: url(/images/separator.png) repeat; }
 
 list-number-image {
   background: url(../img/box-disc-blue.png) no-repeat; }
@@ -276,6 +276,14 @@ footer {
       display: inline; }
       footer .footer-nav li a {
         font-size: 1rem; } }
+.slider-block {
+  padding-left: 0;
+  padding-right: 0; }
+  .slider-block .cycle-slideshow img {
+    width: 100%; }
+  .slider-block .slider-nav a#cycle-prev {
+    background: url("/images/slider-arrows.png") no-repeat left bottom; }
+
 .welcome-block {
   padding-left: 0px;
   padding-right: 0px;
@@ -307,6 +315,12 @@ footer {
         color: #ddd;
         text-decoration: none; }
 
+.our-caregivers-block .content a.zoom {
+  display: block;
+  background: url(/images/zoom.png) no-repeat center; }
+  .our-caregivers-block .content a.zoom img:hover {
+    opacity: 0.4; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -319,7 +333,7 @@ body {
 
 .wrapper {
   margin-top: 20px;
-  padding: 30px 40px 30px 40px;
+  padding: 30px 20px 30px 20px;
   background-color: #f7f7f7; }
 
 /*# sourceMappingURL=style.css.map */

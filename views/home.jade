@@ -1,0 +1,131 @@
+extends layout
+
+block content
+
+    .slider-block.col-xs-12
+        .cycle-slideshow(data-cycle-prev='#cycle-prev', data-cycle-next='#cycle-next')
+            img.img-responsive(src='/images/slide-1.jpg' alt='image')
+            img.img-responsive(src='/images/slide-2.jpg' alt='image')
+            img.img-responsive(src='/images/slide-3.jpg' alt='image')
+            img.img-responsive(src='/images/slide-4.jpg' alt='image')
+        .slider-nav
+            a#cycle-prev Prev
+            a#cycle-next Next
+
+    .separator-line.col-xs-12
+
+    .welcome-block.col-xs-12
+        .content.col-sm-7
+            p
+                |Welcome to
+                span  Mature Caregivers
+            p.description
+                |We provide geriatric expertise and reliable in-home eldercare from
+                |certified providers age 50+. To inquire about services, click the
+                |'SEARCH NOW' button or call us at (888) 320-6700.
+        .welcome-btn.col-sm-5
+            a(href='/searchcare') SEARCH NOW
+
+    .separator-line.col-xs-12
+
+    .what-we-do-block.col-xs-12
+        .content-description.col-sm-3
+            h2 What we do
+            a.button(href='/about') Read More
+        .content.col-sm-3
+            .box-title
+                span.box-number-blue 1
+                h3 Listen
+                span.box-subtitle Customized in-home care
+                p
+                    |We can handle your loved one's in-home care needs, whether it's
+                    |basic personal care, medication assistance, or help with dementia.
+        .content.col-sm-3
+            .box-title
+                span.box-number-blue 2
+                h3 Match
+                span.box-subtitle Screened and Certified
+                p
+                    |Our caregivers are thoroughly screened & trained in home care fundamentals,
+                    |and certified. Our care concierges match them to your needs.
+        .content.col-sm-3
+            .box-title
+                span.box-number-blue 3
+                h3 Serve
+                span.box-subtitle we're here for you 24/7
+                p
+                    |When your family’s needs change, we're available to address them,
+                    |no matter what the time of day or night.
+
+    .separator-line.col-xs-12
+
+    .our-caregivers-block.col-xs-12
+        .content-description.col-sm-3
+            h2 Our caregivers
+            p
+                |Our caregivers are all over age 50, which means your loved one is
+                |cared for by someone who is close to their age, with similar life experiences.
+        .content.col-sm-3
+            a.zoom(href='/images/julie-1b.jpg', rel='prettyPhoto')
+                img.box-img(src='/images/julie-1a.jpg', alt='Julie has been a caregiver since 1998 and is currently enjoying a 2 year assignment.')
+            .box-title
+                h4 Julie - Boston, MA
+            p
+                |For over a decade, Julie has been providing care for seniors.  She is compassionate and dependable.
+        .content.col-sm-3
+            a.zoom(href='/images/heather-1b.jpg', rel='prettyPhoto')
+                img.box-img(src='/images/heather-1a.jpg', alt='Heather has been a member since 2010 and works part time for several clients.')
+            .box-title
+                h4 Heather - Orlando, FL
+            p
+                |Heather has been a caregiver since 2010 and works part time for several clients.
+        .content.col-sm-3
+            a.zoom(href='/images/mark-1b.jpg', rel='prettyPhoto')
+                img.box-img(src='/images/mark-1a.jpg', alt='Mark is a registered nurse and can provide certain medical procedures.')
+            .box-title
+                h4 Mark - Dallas, TX
+            p
+                |Mark is a certified nursing assistant who joined Mature Caregivers after a career in teaching.
+
+    .separator-line.col-xs-12
+
+    .home-about-block.col-xs-12
+        content.col-sm-6
+            .box-title
+                h3 About Us
+                span.box-subtitle Our Story
+                p
+                    |Mature Caregivers is the sister business of
+                    a(href='http://www.retirementjobs.com') RetirementJobs.com
+                    |, the #1 career site for people age 50+ with more than 1 million members.
+                    |RetirementJobs.com has been in business since 2006.  Headquartered in Waltham,
+                    |MA, it administers the 'Certified Age Friendly Employer' program,
+                    |recognized by AARP and Consumer Reports, and the U.S. Senate Committee on Aging.
+                    |This program is central to building trust and helping people overcome the
+                    |difficult realities of workplace age bias, which remains so prevalent in today's society.
+                    |It has earned accolades, including a White House invitation to the
+                    |Company to discuss policy solutions concerning older Americans.
+                a.button(href='/about') Continue Reading
+        content.col-sm-3
+            .box-title
+                h3 Latest News
+                span.box-subtitle From our network
+            ul.latest-news
+                li American Society on Aging
+                    p
+                        |Mature Caregivers Executive Director and Gerontologist presents memory preservation research at ASA Conference.
+                span
+                li Better Business Bureau
+                    p
+                        |Mature Caregivers and sister company RetirementJobs.com enjoy an ‘A’ rating with the Better Business Bureau.
+        content.col-sm-3
+            .box-title
+                h3 Services We Offer
+                span.box-subtitle based around your needs
+            p We listen to your needs and concerns and shape a solution.
+            ul.custom-list.arrows-1
+                li Personal care
+                li Medication assistance
+                li Companionship
+                li Transportation
+                li Dementia

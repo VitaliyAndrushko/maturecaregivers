@@ -1,3 +1,21 @@
+.slider-block {
+    padding-left: 0;
+    padding-right: 0;
+
+    .cycle-slideshow {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .slider-nav {
+        a#cycle-prev {
+            background: url('/images/slider-arrows.png') no-repeat left bottom;
+        }
+    }
+}
+
 .welcome-block {
     padding-left: 0px;
     padding-right: 0px;
@@ -39,6 +57,22 @@
             &:hover {
                 color: #ddd;
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+.our-caregivers-block {
+
+    .content {
+        a.zoom {
+            display: block;
+            background: url(/images/zoom.png) no-repeat center;
+
+            img {
+                &:hover {
+                    opacity: 0.4;
+                }
             }
         }
     }
