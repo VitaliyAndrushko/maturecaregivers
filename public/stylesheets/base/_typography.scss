@@ -1,1 +1,130 @@
-$font-main: Yanone, Tahoma, Arial, sans-serif;
+$font-main: Arial, sans-serif;
+$font-titles: Yanone Kaffeesatz, Arial, sans-serif;
+$font-list-number: Tahoma, Arial ,sans-serif;
+$font-h3: Yanone Kaffeesatz, Arial, sans-serif;
+
+
+$size-xs: 10px;
+$size-small: 11px;
+$size-normal-strong: 13px;
+$size-normal: 14px;
+$size-sm-medium: 18px;
+$size-medium: 20px;
+$size-title: 26px;
+$size-h2: 34px;
+
+$style-normal: normal;
+$style-bold: bold;
+$style-italic: italic;
+
+$line-normal: 20px;
+$line-h3: 22px;
+$line-h1: 26px;
+$line-h2: 36px;
+$line-xs: 10px;
+
+/*Font clasess*/
+* {
+	color: $custom-body;
+	font-size: $size-normal;
+	font-family: $font-main;
+	line-height: $line-normal;
+}
+
+a {
+	color: $title-second;
+}
+
+menu-styles {
+	font-size: $size-medium;
+	font-family: $font-titles;
+}
+
+h1-style {
+    font-size: $size-normal-strong;
+    text-transform: uppercase;
+    font-family: $font-main;
+    line-height: $line-h1;
+    font-weight: $style-normal;
+}
+
+h3-styles {
+	font-size: $size-title;
+	color: $title-first;
+	font-weight: $style-normal;
+	line-height: $line-h3;
+	font-family: $font-h3;
+}
+
+h4-styles {
+	font-size: $size-sm-medium;
+    color: $title-second;
+}
+
+box-h3-style {
+	font-size: $size-medium;
+    line-height: $line-normal;
+    color: $title-second;
+}
+
+h2-styles {
+	font-size: $size-h2;
+    line-height: $line-h2;
+    color: $h2-color;
+    text-transform: uppercase;
+}
+
+h2-content-styles {
+	color: $h2-color;
+    font-style: $style-italic;
+}
+
+italic-span {
+	color: $title-second;
+	font-style: $style-italic;
+}
+
+xs-subtitle {
+	font-size: $size-xs;
+    line-height: $line-xs;
+    text-transform: uppercase;
+}
+
+btn-styles {
+	font-family: $font-h3;
+	font-size: $size-title;
+	text-transform: uppercase;
+	text-shadow: 1px 1px $btn-shadows;
+}
+
+btn-sm-style {
+	font-size: $size-small;
+    color: $background-page;
+}
+
+list-number {
+    display: block;
+    color: $background-page;
+    font-family: $font-list-number;
+    font-size: $size-normal;
+    text-align: center;
+}
+
+list-li-strong {
+	color: $custom-body;
+    font-size: $size-normal-strong;
+    font-weight: $style-bold;
+}
+footer-main {
+	text-decoration: none;
+    font-family: $font-h3;
+    color: $background-page;
+    font-size: $size-sm-medium;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px $text-shadows;
+}
+footer-small {
+	color: $grey;
+    font-size: $size-xs;
+    text-shadow: 1px 1px 1px $text-shadows;
+}

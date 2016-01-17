@@ -1,18 +1,17 @@
 @import 'base/_color.scss';
 @import 'base/_typography.scss';
 @import 'components/_separators.scss';
+@import 'components/_backgrounds.scss';
+@import 'components/_buttons.scss';
 @import 'layout/_header.scss';
 @import 'layout/_footer.scss';
 @import 'pages/_home.scss';
-
-html {
-	font-size: 62.5%;
-}
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	@extend *;
 
 	&:focus {
 		outline: 0;
@@ -20,23 +19,8 @@ html {
 }
 
 body {
-	color: #747474;
-	font-size: 14px;
-	font-size: 1.4rem;
-	font-family: Arial, sans-serif;
-	line-height: 20px;
 	background-color: $background-body;
 }
-
-/*=====BACKGROUND PATTERNS=====*/
-.mosaic { background-image: url(../img/backgrounds/pattern-1.png); }
-.tiles { background-image: url(../img/backgrounds/pattern-2.png); }
-.small-grid { background-image: url(/images/pattern-3.png); }
-.lines { background-image: url(../img/backgrounds/pattern-4.png); }
-.medium-grid { background-image: url(../img/backgrounds/pattern-5.png); }
-.wood { background-image: url(../img/backgrounds/pattern-6.jpg); }
-.vertical-lines { background-image: url(../img/backgrounds/pattern-7.png); }
-.noise { background-image: url(../img/backgrounds/pattern-8.jpg); }
 
 .wrapper {
 	margin-top: 20px;

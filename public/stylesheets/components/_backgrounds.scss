@@ -1,0 +1,26 @@
+/*Backgrounds styles*/
+btn-main-image {
+	background: url(../img/button.png) repeat-x;
+}
+btn-main-arrow-image {
+	background: url(../img/arrow-btn.png) no-repeat;
+}
+dividers-image {
+	background: url(../img/separator.png) repeat;
+}
+list-number-image {
+	background: url(../img/box-disc-blue.png) no-repeat;
+}
+list-arrow-image {
+	background: url(../img/bullets/arrow-light.png) no-repeat 0px 5px;
+}
+
+/*=====BACKGROUND PATTERNS=====*/
+.mosaic { background-image: url(../img/backgrounds/pattern-1.png); }
+.tiles { background-image: url(../img/backgrounds/pattern-2.png); }
+.small-grid { background-image: url(/images/pattern-3.png); }
+.lines { background-image: url(../img/backgrounds/pattern-4.png); }
+.medium-grid { background-image: url(../img/backgrounds/pattern-5.png); }
+.wood { background-image: url(../img/backgrounds/pattern-6.jpg); }
+.vertical-lines { background-image: url(../img/backgrounds/pattern-7.png); }
+.noise { background-image: url(../img/backgrounds/pattern-8.jpg); }
