@@ -2,8 +2,7 @@
     padding-left: 0px;
     padding-right: 0px;
     position: relative;
-    font-size: 2.4rem;
-    color: #6b6b6b;
+    color: $title-first;
 
     .content {
         padding-left: 0px;
@@ -11,16 +10,12 @@
 
         p {
             span {
-                color: $main;
+                color: $title-second;
             }
         }
 
         .description {
             margin: 0 0 15px;
-            color: #747474;
-            font-size: 1.4rem;
-            font-family: Arial, sans-serif;
-            line-height: 20px;
         }
     }
 

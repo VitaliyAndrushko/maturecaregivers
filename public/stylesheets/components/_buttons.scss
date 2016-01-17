@@ -1,0 +1,23 @@
+/*Styles for btns*/
+.btn-main {
+	span.main {
+		@extend btn-styles;
+		margin-right: 2px;
+		display: block;
+		height: 23px;
+		@extend btn-main-image;
+		float: left;
+		padding: 15px 20px;
+	}
+}
+.btn-small {
+	@extend btn-sm-style;
+    padding: 3px 7px;
+    background: $title-second;
+    display: inline-block;
+    margin-bottom: 15px;
+    &:hover {
+    	background: $btn-hover;
+    	text-decoration: none;
+    }
+}

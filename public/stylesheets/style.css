@@ -1,47 +1,192 @@
+/*//main*/
+/*Font clasess*/
+* {
+  color: #747474;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 20px; }
+
+a {
+  color: #db7030; }
+
+menu-styles, .bs-navbar .navbar-nav li a {
+  font-size: 20px;
+  font-family: Yanone Kaffeesatz, Arial, sans-serif; }
+
+h1-style, .bs-navbar div .navbar-header .navbar-brand h1 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  line-height: 26px;
+  font-weight: normal; }
+
+h3-styles {
+  font-size: 26px;
+  color: #6b6b6b;
+  font-weight: normal;
+  line-height: 22px;
+  font-family: Yanone Kaffeesatz, Arial, sans-serif; }
+
+h4-styles {
+  font-size: 18px;
+  color: #db7030; }
+
+box-h3-style {
+  font-size: 20px;
+  line-height: 20px;
+  color: #db7030; }
+
+h2-styles {
+  font-size: 34px;
+  line-height: 36px;
+  color: #999;
+  text-transform: uppercase; }
+
+h2-content-styles {
+  color: #999;
+  font-style: italic; }
+
+italic-span {
+  color: #db7030;
+  font-style: italic; }
+
+xs-subtitle {
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase; }
+
+btn-styles, .btn-main span.main {
+  font-family: Yanone Kaffeesatz, Arial, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #252525; }
+
+btn-sm-style, .btn-small {
+  font-size: 11px;
+  color: #f7f7f7; }
+
+list-number {
+  display: block;
+  color: #f7f7f7;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center; }
+
+list-li-strong {
+  color: #747474;
+  font-size: 13px;
+  font-weight: bold; }
+
+footer-main {
+  text-decoration: none;
+  font-family: Yanone Kaffeesatz, Arial, sans-serif;
+  color: #f7f7f7;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #262626; }
+
+footer-small {
+  color: #ddd;
+  font-size: 10px;
+  text-shadow: 1px 1px 1px #262626; }
+
 .separator-line {
   border: none;
   height: 15px;
   margin-bottom: 20px;
-  margin-top: 0px;
-  background: url(/images/separator.png) repeat; }
+  margin-top: 0px; }
+
+/*Backgrounds styles*/
+btn-main-image, .btn-main span.main {
+  background: url(../img/button.png) repeat-x; }
+
+btn-main-arrow-image {
+  background: url(../img/arrow-btn.png) no-repeat; }
+
+dividers-image, .separator-line {
+  background: url(../img/separator.png) repeat; }
+
+list-number-image {
+  background: url(../img/box-disc-blue.png) no-repeat; }
+
+list-arrow-image {
+  background: url(../img/bullets/arrow-light.png) no-repeat 0px 5px; }
+
+/*=====BACKGROUND PATTERNS=====*/
+.mosaic {
+  background-image: url(../img/backgrounds/pattern-1.png); }
+
+.tiles {
+  background-image: url(../img/backgrounds/pattern-2.png); }
+
+.small-grid {
+  background-image: url(/images/pattern-3.png); }
+
+.lines {
+  background-image: url(../img/backgrounds/pattern-4.png); }
+
+.medium-grid {
+  background-image: url(../img/backgrounds/pattern-5.png); }
+
+.wood {
+  background-image: url(../img/backgrounds/pattern-6.jpg); }
+
+.vertical-lines {
+  background-image: url(../img/backgrounds/pattern-7.png); }
+
+.noise {
+  background-image: url(../img/backgrounds/pattern-8.jpg); }
+
+/*Styles for btns*/
+.btn-main span.main {
+  margin-right: 2px;
+  display: block;
+  height: 23px;
+  float: left;
+  padding: 15px 20px; }
+
+.btn-small {
+  padding: 3px 7px;
+  background: #db7030;
+  display: inline-block;
+  margin-bottom: 15px; }
+  .btn-small:hover {
+    background: #565656;
+    text-decoration: none; }
 
 .bs-navbar {
   border-left: 0;
   border-right: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  min-height: 105px; }
   .bs-navbar div {
     padding-left: 0;
     padding-right: 0; }
     .bs-navbar div .navbar-header button {
       margin-top: 33px; }
+    .bs-navbar div .navbar-header a {
+      text-decoration: none; }
     .bs-navbar div .navbar-header .navbar-brand {
-      line-height: 100px;
-      height: 100px;
-      padding-top: 5px; }
-      .bs-navbar div .navbar-header .navbar-brand p {
-        position: absolute;
-        line-height: 20px;
-        left: 50px;
-        font-size: 1.2rem;
-        text-transform: uppercase; }
-  .bs-navbar .navbar-nav {
-    margin-right: -40px; }
-    .bs-navbar .navbar-nav li:first-child {
-      margin-left: 100px; }
-    .bs-navbar .navbar-nav li {
-      display: inline-block; }
-      .bs-navbar .navbar-nav li a {
-        line-height: 100px;
-        height: 100px;
-        padding-top: 0;
-        color: #a9a9a9;
-        font-family: Yanone, Tahoma, Arial, sans-serif;
-        font-size: 1.8rem; }
-        .bs-navbar .navbar-nav li a:hover {
-          text-decoration: none;
-          color: #db7030; }
-    .bs-navbar .navbar-nav li.active a {
-      color: #db7030; }
+      padding-top: 5px;
+      padding: 0 0 0 10px;
+      height: 70px;
+      width: 430px;
+      float: left; }
+      .bs-navbar div .navbar-header .navbar-brand h1 {
+        padding-left: 65px;
+        margin-top: 0; }
+  .bs-navbar .navbar-nav li {
+    display: inline-block;
+    margin-top: 25px; }
+    .bs-navbar .navbar-nav li a {
+      background-color: transparent; }
+  .bs-navbar .navbar-nav li.active a {
+    color: #db7030;
+    background-color: transparent; }
+  .bs-navbar .navbar-nav li:hover a,
+  .bs-navbar .navbar-nav li.active:hover a {
+    background-color: transparent;
+    color: #db7030; }
 
 @media screen and (max-width: 1199px) {
   .bs-navbar ul.navbar-nav {
@@ -60,11 +205,7 @@
     margin-left: 0px; }
 
   .bs-navbar ul.navbar-nav li a {
-    padding: 0px 7px;
-    font-size: 1.5rem; }
-
-  .navbar-brand p {
-    font-size: 1rem !important; } }
+    padding: 0px 7px; } }
 @media screen and (max-width: 768px) {
   .navbar-brand {
     width: 80%; }
@@ -101,13 +242,10 @@ footer {
   border-top: 1px solid #363636; }
   footer .copyright {
     color: #ddd;
-    font-size: 1rem;
     text-shadow: 1px 1px 1px #262626; }
     footer .copyright a {
-      font-family: Yanone, Tahoma, Arial, sans-serif;
-      color: #f7f7f7;
-      font-size: 1.6rem;
-      letter-spacing: 1px; }
+      font-family: #db7030;
+      color: #f7f7f7; }
       footer .copyright a:hover {
         color: #ddd;
         text-decoration: none; }
@@ -121,11 +259,6 @@ footer {
       display: inline;
       margin-left: 8px; }
       footer .footer-nav li a {
-        font-family: Arial, sans-serif;
-        color: #f7f7f7;
-        font-size: 1rem;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 1px #262626;
         cursor: pointer; }
         footer .footer-nav li a:hover {
           color: #ddd;
@@ -147,7 +280,6 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
   position: relative;
-  font-size: 2.4rem;
   color: #6b6b6b; }
   .welcome-block .content {
     padding-left: 0px;
@@ -155,11 +287,7 @@ footer {
     .welcome-block .content p span {
       color: #db7030; }
     .welcome-block .content .description {
-      margin: 0 0 15px;
-      color: #747474;
-      font-size: 1.4rem;
-      font-family: Arial, sans-serif;
-      line-height: 20px; }
+      margin: 0 0 15px; }
   .welcome-block .welcome-btn {
     text-align: right; }
     .welcome-block .welcome-btn a {
@@ -179,48 +307,15 @@ footer {
         color: #ddd;
         text-decoration: none; }
 
-html {
-  font-size: 62.5%; }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
-  *:focus {
+  :focus {
     outline: 0; }
 
 body {
-  color: #747474;
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-family: Arial, sans-serif;
-  line-height: 20px;
   background-color: #c3c3c3; }
-
-/*=====BACKGROUND PATTERNS=====*/
-.mosaic {
-  background-image: url(../img/backgrounds/pattern-1.png); }
-
-.tiles {
-  background-image: url(../img/backgrounds/pattern-2.png); }
-
-.small-grid {
-  background-image: url(/images/pattern-3.png); }
-
-.lines {
-  background-image: url(../img/backgrounds/pattern-4.png); }
-
-.medium-grid {
-  background-image: url(../img/backgrounds/pattern-5.png); }
-
-.wood {
-  background-image: url(../img/backgrounds/pattern-6.jpg); }
-
-.vertical-lines {
-  background-image: url(../img/backgrounds/pattern-7.png); }
-
-.noise {
-  background-image: url(../img/backgrounds/pattern-8.jpg); }
 
 .wrapper {
   margin-top: 20px;
