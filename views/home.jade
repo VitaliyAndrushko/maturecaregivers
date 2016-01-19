@@ -12,12 +12,11 @@ block content
             a#cycle-prev Prev
             a#cycle-next Next
 
-    .separator-line.col-xs-12
+    .separator-line.col-xs-12.m-b-15
 
     .welcome-block.col-xs-12
         .content.col-sm-7
-            p
-                |Welcome to
+            h3.post-title.m-t-0 Welcome to
                 span  Mature Caregivers
             p.description
                 |We provide geriatric expertise and reliable in-home eldercare from
@@ -26,16 +25,16 @@ block content
         .welcome-btn.col-sm-5
             a(href='/searchcare') SEARCH NOW
 
-    .separator-line.col-xs-12
+    .separator-line.col-xs-12.m-b-15
 
-    .what-we-do-block.col-xs-12
-        .content-description.col-sm-3
-            h2 What we do
-            a.button(href='/about') Read More
+    .what-we-do-block.short-summary-blocks.col-xs-12.p-l-0
+        .content-description.col-sm-3.p-l-0
+            h2.info-title What we do
+            a.btn-small.button(href='/about') Read More
         .content.col-sm-3
             .box-title
                 span.box-number-blue 1
-                h3 Listen
+                h3.box-item-title Listen
                 span.box-subtitle Customized in-home care
                 p
                     |We can handle your loved one's in-home care needs, whether it's
@@ -43,7 +42,7 @@ block content
         .content.col-sm-3
             .box-title
                 span.box-number-blue 2
-                h3 Match
+                h3.box-item-title Match
                 span.box-subtitle Screened and Certified
                 p
                     |Our caregivers are thoroughly screened & trained in home care fundamentals,
@@ -51,51 +50,54 @@ block content
         .content.col-sm-3
             .box-title
                 span.box-number-blue 3
-                h3 Serve
+                h3.box-item-title Serve
                 span.box-subtitle we're here for you 24/7
                 p
                     |When your family’s needs change, we're available to address them,
                     |no matter what the time of day or night.
 
-    .separator-line.col-xs-12
+    .separator-line.col-xs-12.m-b-15
 
-    .our-caregivers-block.col-xs-12
-        .content-description.col-sm-3
-            h2 Our caregivers
-            p
+    .our-caregivers-block.short-summary-blocks.col-xs-12.p-l-0
+        .content-description.col-sm-3.p-l-0
+            h2.info-title Our caregivers
+            p.box-short-description
                 |Our caregivers are all over age 50, which means your loved one is
                 |cared for by someone who is close to their age, with similar life experiences.
         .content.col-sm-3
-            a.zoom(href='/images/julie-1b.jpg', rel='prettyPhoto')
+            a.zoom.zoom-on-image(href='/images/julie-1b.jpg', rel='prettyPhoto')
                 img.box-img(src='/images/julie-1a.jpg', alt='Julie has been a caregiver since 1998 and is currently enjoying a 2 year assignment.')
+                span.glyphicon.glyphicon-search
             .box-title
-                h4 Julie - Boston, MA
+                h4.box-name-title Julie - Boston, MA
             p
                 |For over a decade, Julie has been providing care for seniors.  She is compassionate and dependable.
         .content.col-sm-3
-            a.zoom(href='/images/heather-1b.jpg', rel='prettyPhoto')
+            a.zoom.zoom-on-image(href='/images/heather-1b.jpg', rel='prettyPhoto')
                 img.box-img(src='/images/heather-1a.jpg', alt='Heather has been a member since 2010 and works part time for several clients.')
+                span.glyphicon.glyphicon-search
             .box-title
-                h4 Heather - Orlando, FL
+                h4.box-name-title Heather - Orlando, FL
             p
                 |Heather has been a caregiver since 2010 and works part time for several clients.
         .content.col-sm-3
-            a.zoom(href='/images/mark-1b.jpg', rel='prettyPhoto')
+            a.zoom.zoom-on-image(href='/images/mark-1b.jpg', rel='prettyPhoto')
                 img.box-img(src='/images/mark-1a.jpg', alt='Mark is a registered nurse and can provide certain medical procedures.')
+                span.glyphicon.glyphicon-search
             .box-title
-                h4 Mark - Dallas, TX
+                h4.box-name-title Mark - Dallas, TX
             p
                 |Mark is a certified nursing assistant who joined Mature Caregivers after a career in teaching.
 
-    .separator-line.col-xs-12
+    .separator-line.col-xs-12.m-b-15.m-t-15
 
-    .home-about-block.col-xs-12
-        content.col-sm-6
+    .home-about-block.col-xs-12.p-l-0
+        content.col-sm-6.p-l-0
             .box-title
-                h3 About Us
+                h3.third-info-title About Us
                 span.box-subtitle Our Story
                 p
-                    |Mature Caregivers is the sister business of
+                    |Mature Caregivers is the sister business of 
                     a(href='http://www.retirementjobs.com') RetirementJobs.com
                     |, the #1 career site for people age 50+ with more than 1 million members.
                     |RetirementJobs.com has been in business since 2006.  Headquartered in Waltham,
@@ -105,27 +107,39 @@ block content
                     |difficult realities of workplace age bias, which remains so prevalent in today's society.
                     |It has earned accolades, including a White House invitation to the
                     |Company to discuss policy solutions concerning older Americans.
-                a.button(href='/about') Continue Reading
+                a.button.btn-small(href='/about') Continue Reading
         content.col-sm-3
             .box-title
-                h3 Latest News
+                h3.third-info-title Latest News
                 span.box-subtitle From our network
             ul.latest-news
-                li American Society on Aging
+                li 
+                    span American Society on Aging
                     p
                         |Mature Caregivers Executive Director and Gerontologist presents memory preservation research at ASA Conference.
                 span
-                li Better Business Bureau
+                li 
+                    span Better Business Bureau
                     p
                         |Mature Caregivers and sister company RetirementJobs.com enjoy an ‘A’ rating with the Better Business Bureau.
         content.col-sm-3
             .box-title
-                h3 Services We Offer
+                h3.third-info-title Services We Offer
                 span.box-subtitle based around your needs
             p We listen to your needs and concerns and shape a solution.
             ul.custom-list.arrows-1
-                li Personal care
-                li Medication assistance
-                li Companionship
-                li Transportation
-                li Dementia
+                li 
+                    i.glyphicon.glyphicon.glyphicon-menu-right
+                    span.p-l-5 Personal care
+                li 
+                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    span.p-l-5 Medication assistance
+                li 
+                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    span.p-l-5 Companionship
+                li 
+                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    span.p-l-5 Transportation
+                li 
+                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    span.p-l-5 Dementia

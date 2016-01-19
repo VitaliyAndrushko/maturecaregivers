@@ -1,36 +1,28 @@
 .slider-block {
     padding-left: 0;
     padding-right: 0;
-
+    margin-bottom: 40px;
     .cycle-slideshow {
-
         img {
             width: 100%;
         }
     }
-
     .slider-nav {
         a#cycle-prev {
             background: url('/images/slider-arrows.png') no-repeat left bottom;
         }
     }
 }
-
 .welcome-block {
     padding-left: 0px;
     padding-right: 0px;
     position: relative;
     color: $title-first;
-
     .content {
         padding-left: 0px;
         padding-right: 0px;
-
-        p {
-            span {
-                color: $title-second;
-            }
-        }
+        h3.post-title {
+            @extend h3-styles;        }
 
         .description {
             margin: 0 0 15px;
@@ -39,7 +31,6 @@
 
     .welcome-btn {
         text-align: right;
-
         a {
             position: absolute;
             top: 5px;
@@ -53,7 +44,6 @@
             text-transform: uppercase;
             text-shadow: 1px 1px #252525;
             color: #f7f7f7;
-
             &:hover {
                 color: #ddd;
                 text-decoration: none;
@@ -61,19 +51,84 @@
         }
     }
 }
-
+.short-summary-blocks {
+    h2.info-title {
+        @extend h2-styles;
+    }
+    .content-description {
+        border-right: 1px solid $borders-color;
+    }
+}
+.what-we-do-block {    
+    .box-title {
+        .box-number-blue {
+            @extend list-number;
+            padding-top: 6px;
+            width: 33px;
+            height: 33px;
+            background-color: $blue;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+        }
+        h3.box-item-title {
+            @extend box-h3-style;
+            padding-bottom: 3px;
+            margin-bottom: 0;
+        }
+        span.box-subtitle {
+            @extend xs-subtitle;
+            display: block;
+            margin-bottom: 12px;
+        }
+    }
+}
 .our-caregivers-block {
-
+    p.box-short-description {
+        @extend h2-content-styles;
+    }
     .content {
         a.zoom {
             display: block;
-            background: url(/images/zoom.png) no-repeat center;
-
             img {
                 &:hover {
                     opacity: 0.4;
                 }
             }
+        }
+    }
+    img.box-img {
+            padding: 3px;
+            border: 1px solid $borders-color;
+            margin-bottom: 5px;
+    }
+    h4.box-name-title {
+        @extend h4-styles;
+    }
+}
+.home-about-block {
+    h3.third-info-title {
+        @extend box-h3-style;
+        margin-bottom: 2px;
+    }
+    span.box-subtitle {
+        @extend xs-subtitle;
+        display: block;
+        margin-bottom: 12px;
+    }
+    ul.latest-news {
+        list-style: none;
+        li > span {
+            @extend list-li-strong;
+        }
+    }
+    ul.custom-list {
+        list-style: none;
+        i {
+            color: $borders-color;
+        }
+        li {
+            margin-bottom: 6px;
         }
     }
 }

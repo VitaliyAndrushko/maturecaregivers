@@ -1,5 +1,7 @@
 /*Styles for btns*/
 .btn-main {
+	background-color: $btn-main-color;
+	height: 53px;
 	span.main {
 		@extend btn-styles;
 		margin-right: 2px;
@@ -16,8 +18,10 @@
     background: $title-second;
     display: inline-block;
     margin-bottom: 15px;
+    color: $white;
     &:hover {
     	background: $btn-hover;
     	text-decoration: none;
+    	color: $white;
     }
 }

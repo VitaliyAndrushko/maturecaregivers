@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+}
 @import 'base/_color.scss';
 @import 'base/_typography.scss';
+@import 'base/_helpers.scss';
 @import 'components/_separators.scss';
 @import 'components/_backgrounds.scss';
 @import 'components/_buttons.scss';
+@import 'components/_images-blocks.scss';
 @import 'layout/_header.scss';
 @import 'layout/_footer.scss';
 @import 'pages/_home.scss';
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -24,6 +29,6 @@ body {
 
 .wrapper {
 	margin-top: 20px;
-    padding: 30px 20px 30px 20px;
+    padding: 30px 40px;
 	background-color: $background-page;
 }

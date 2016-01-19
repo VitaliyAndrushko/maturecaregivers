@@ -1,0 +1,14 @@
+/*styles for icons-images*/
+.zoom-on-image {
+    position: relative; 
+    span {
+        position: absolute;
+        left: 35%;
+        top: 35%;
+        font-size: 30px;
+        display: none;
+    }
+    img:hover + span {
+	    display: inline-block;
+	}
+}

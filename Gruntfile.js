@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
         watch: {
             sass : {
-                files : 'public/stylesheets/*.scss',
+                files : 'public/stylesheets/**/*.scss',
                 tasks : 'sass'
             }
         },
@@ -28,11 +28,21 @@ module.exports = function (grunt) {
                 }
             }
         },
+        copy: {        
+            files: {
+                src: 'public/fonts/**',
+                dest: 'public/stylesheets/fonts/',
+                filter: 'isFile',
+                expand: true,
+                flatten: true
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['sass', 'express', 'watch']);
+    grunt.registerTask('default', ['copy', 'sass', 'express', 'watch']);
 };
