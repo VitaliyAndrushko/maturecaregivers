@@ -1,7 +1,6 @@
 $font-main: Arial, sans-serif;
 $font-titles: Yanone Kaffeesatz, Arial, sans-serif;
 $font-list-number: Tahoma, Arial ,sans-serif;
-$font-h3: Yanone Kaffeesatz, Arial, sans-serif;
 
 
 $size-xs: 10px;
@@ -30,16 +29,16 @@ $line-xs: 10px;
 	font-family: $font-main;
 	line-height: $line-normal;
 }
-
+/*mark all link to orange*/
 a {
 	color: $title-second;
 }
-
+/*using for nav-bar menu items*/
 menu-styles {
 	font-size: $size-medium;
 	font-family: $font-titles;
 }
-
+/*using for title that we use after logo in firs page*/
 h1-style {
     font-size: $size-normal-strong;
     text-transform: uppercase;
@@ -47,33 +46,49 @@ h1-style {
     line-height: $line-h1;
     font-weight: $style-normal;
 }
-
+/*using for post-title, e.g. on first page "Welcom To MatureCaregivers"*/
 h3-styles {
 	font-size: $size-title;
 	color: $title-first;
 	font-weight: $style-normal;
 	line-height: $line-h3;
-	font-family: $font-h3;
+	font-family: $font-titles;
+    span {
+        color: $title-second;
+        font-size: $size-title;
+        font-weight: $style-normal;
+        line-height: $line-h3;
+        font-family: $font-titles;
+    }
 }
-
+/*using for small title e.g. to named images in first page*/
 h4-styles {
 	font-size: $size-sm-medium;
     color: $title-second;
+    font-family: $font-titles;
 }
-
+/*using for title in list e.g. titles in 1,2,3*/
 box-h3-style {
 	font-size: $size-medium;
     line-height: $line-normal;
     color: $title-second;
+    font-family: $font-titles;
 }
-
+/*using for subtitles in list*/
+xs-subtitle {
+    font-size: $size-xs;
+    line-height: $line-xs;
+    text-transform: uppercase;
+}
+/*using for titles in information block, e.g. on first page "What we do"*/
 h2-styles {
+    font-family: $font-titles;
 	font-size: $size-h2;
     line-height: $line-h2;
     color: $h2-color;
     text-transform: uppercase;
 }
-
+/*using for italic short description in information block*/
 h2-content-styles {
 	color: $h2-color;
     font-style: $style-italic;
@@ -84,14 +99,8 @@ italic-span {
 	font-style: $style-italic;
 }
 
-xs-subtitle {
-	font-size: $size-xs;
-    line-height: $line-xs;
-    text-transform: uppercase;
-}
-
 btn-styles {
-	font-family: $font-h3;
+	font-family: $font-titles;
 	font-size: $size-title;
 	text-transform: uppercase;
 	text-shadow: 1px 1px $btn-shadows;
@@ -117,7 +126,7 @@ list-li-strong {
 }
 footer-main {
 	text-decoration: none;
-    font-family: $font-h3;
+    font-family: $font-titles;
     color: $background-page;
     font-size: $size-sm-medium;
     letter-spacing: 1px;

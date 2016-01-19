@@ -3,23 +3,12 @@ footer {
     padding: 15px 0;
     background: $btn-hover;
     border-top: 1px solid $footer-border;
-
     .copyright {
-        color: $grey;
-        text-shadow: 1px 1px 1px $text-shadows;
-
         a {
-            font-family: $title-second;
-            color: $background-page;
-
-            &:hover {
-                color: $grey;
-                text-decoration: none;
-            }
+            @extend footer-main;
         }
-
         p {
-            margin: 0;
+            @extend footer-small;
         }
     }
 
@@ -27,45 +16,20 @@ footer {
         margin-top: 10px;
         list-style: none;
         text-align: right;
-
         li {
             display: inline;
             margin-left: 8px;
-
             a {
                 cursor: pointer;
-
+                font-family: $font-main;
+                color: $background-page;
+                font-size: $size-xs;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px $text-shadows;
+                text-decoration: none;
                 &:hover {
                     color: $grey;
                     text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        .copyright {
-            text-align: center;
-            font-size: 1rem;
-
-            a {
-                font-size: 1.6rem
-            }
-
-            p {
-            }
-        }
-
-        .footer-nav {
-            text-align: center;
-
-            li {
-                display: inline;
-
-                a {
-                    font-size: 1rem;
                 }
             }
         }

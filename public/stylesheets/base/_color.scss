@@ -1,6 +1,8 @@
 $white: #ffffff;
 $black: #000000;
 $grey: #ddd;
+/*using for circles in list number*/
+$blue: #393BB3;
 $nav-grey: #a9a9a9;
 
 $custom-body: #747474;
@@ -8,12 +10,16 @@ $background-body: #c3c3c3;
 $background-page: #f7f7f7;
 $footer-border: #363636;
 
-$borders-color: #ebebeb;
+/*using for grey line TODO: delete if not needed*/
+$borders-color: #e7e7e7;
+/*using in footer and other place to add shadows to text*/
 $text-shadows: #262626;
 $h2-color: #999;
+/*using for first part of title in grey color*/
 $title-first: #6b6b6b;
+/*using for second part of titles in orange color*/
 $title-second: #db7030;
-/*//main*/
 
 $btn-shadows: #252525;
 $btn-hover: #565656;
+$btn-main-color: #4E4E4E;
