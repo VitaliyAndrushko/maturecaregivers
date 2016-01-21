@@ -713,6 +713,15 @@ footer {
   .home-about-block ul.custom-list li {
     margin-bottom: 6px; }
 
+.page-title .page-title-content {
+  background: url(/images/title-stripes.png) no-repeat 20px 0px;
+  margin: 0 auto;
+  height: 132px;
+  margin-bottom: 40px;
+  background-color: #393bb3; }
+  .page-title .page-title-content div blockquote {
+    background: url(/images/quotes.png) no-repeat; }
+
 * {
   box-sizing: border-box;
   margin: 0;
