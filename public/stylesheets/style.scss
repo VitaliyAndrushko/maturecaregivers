@@ -33,3 +33,21 @@ body {
     padding: 30px 40px;
 	background-color: $background-page;
 }
+@media screen and (max-width: 768px) {
+    .wrapper {
+		margin-top: 0px;
+	    padding: 0;
+		background-color: $background-page;
+		.p-xs-15 {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.text-center-xs {
+			text-align: center;
+		}
+		.img-responsive {
+			display: inline-block;
+		}
+	}
+	
+}

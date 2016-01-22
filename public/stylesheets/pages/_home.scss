@@ -1,7 +1,7 @@
 .slider-block {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     .cycle-slideshow {
         img {
             width: 100%;
@@ -9,8 +9,8 @@
     }
     .slider-nav {
         position: absolute;
-        bottom: 35px;
-        right: 35px;
+        bottom: 20px;
+        right: 20px;
         z-index: 110;
         div {
             width: 45px;
@@ -48,9 +48,12 @@
     }
 
     .welcome-btn {
-        a {
+        width: 200px;
+        float: right;
+        div.main-b {
             @extend .btn-main;
             padding-right: 5px;
+            width: 100%;
             &:hover {
                 color: $grey;
                 text-decoration: none;
@@ -58,10 +61,10 @@
         }
         .icon-arrow-rigth {
             @extend btn-main-arrow-right;
-            @extend .btn-main;
-            display: inline-block;
-            width: 45px;
-            height: 53px;
+            vertical-align: top;
+            padding-top: 30px;
+            padding-right: 15px;
+            padding-left: 25px;
         }
     }
 }
@@ -143,6 +146,19 @@
         }
         li {
             margin-bottom: 6px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .welcome-block {
+        .welcome-btn {
+            width: 100%;
+            float: left;
+        }
+    }
+    .short-summary-blocks {
+        .content-description {
+            border-right: 0px solid transparent;
         }
     }
 }
