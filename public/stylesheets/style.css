@@ -37,13 +37,13 @@ h1-style, .bs-navbar div h1 {
   font-weight: normal; }
 
 /*using for post-title, e.g. on first page "Welcom To MatureCaregivers"*/
-h3-styles, .welcome-block .content h3.post-title {
+h3-styles, h3.post-title, h3.post-title-single {
   font-size: 26px;
   color: #6b6b6b;
   font-weight: normal;
   line-height: 22px;
   font-family: Yanone Kaffeesatz, Arial, sans-serif; }
-  h3-styles span, .welcome-block .content h3.post-title span {
+  h3-styles span, h3.post-title span, h3.post-title-single span {
     color: #db7030;
     font-size: 26px;
     font-weight: normal;
@@ -70,7 +70,7 @@ xs-subtitle, .what-we-do-block .box-title span.box-subtitle, .home-about-block s
   text-transform: uppercase; }
 
 /*using for titles in information block, e.g. on first page "What we do"*/
-h2-styles, .short-summary-blocks h2.info-title {
+h2-styles, .short-summary-blocks h2.info-title, .page-title .page-title-content h2._blockquote-title {
   font-family: Yanone Kaffeesatz, Arial, sans-serif;
   font-size: 34px;
   line-height: 36px;
@@ -119,6 +119,20 @@ footer-small, footer .copyright p {
   color: #ddd;
   font-size: 10px;
   text-shadow: 1px 1px 1px #262626; }
+
+/*Helpers clasess*/
+h3.post-title .description {
+  margin: 10px 0 15px; }
+
+h3.post-title-single {
+  color: #db7030; }
+  h3.post-title-single .description {
+    margin: 10px 0 15px; }
+
+ul.custom-list {
+  list-style: none; }
+  ul.custom-list i {
+    color: #e7e7e7; }
 
 /*Styles for helpers*/
 .m-l-0 {
@@ -647,6 +661,25 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     margin-bottom: 0; } }
+/*styles for aside*/
+.aside-block ul.custom-list li {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px; }
+.aside-block ul.nav-pills li a,
+.aside-block ul.nav-pills li a:hover,
+.aside-block ul.nav-pills li a.active,
+.aside-block ul.nav-pills li a:focus {
+  color: inherit;
+  background-color: transparent;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 0; }
+.aside-block ul.nav-pills li.active a,
+.aside-block ul.nav-pills li:hover a {
+  border-bottom: 1px solid #db7030; }
+.aside-block ul.nav-pills li + li {
+  padding-left: 15px; }
+
 .slider-block {
   padding-left: 0;
   padding-right: 0;
@@ -680,8 +713,6 @@ footer {
   .welcome-block .content {
     padding-left: 0px;
     padding-right: 0px; }
-    .welcome-block .content .description {
-      margin: 0 0 15px; }
   .welcome-block .welcome-btn {
     width: 200px;
     float: right; }
@@ -731,12 +762,6 @@ footer {
   margin-bottom: 12px; }
 .home-about-block ul.latest-news {
   list-style: none; }
-.home-about-block ul.custom-list {
-  list-style: none; }
-  .home-about-block ul.custom-list i {
-    color: #e7e7e7; }
-  .home-about-block ul.custom-list li {
-    margin-bottom: 6px; }
 
 @media screen and (max-width: 768px) {
   .welcome-block .welcome-btn {
@@ -751,9 +776,25 @@ footer {
   height: 132px;
   margin-bottom: 40px;
   background-color: #393bb3; }
-  .page-title .page-title-content div blockquote {
-    background: url(/images/quotes.png) no-repeat; }
+  .page-title .page-title-content h2._blockquote-title {
+    color: #ffffff; }
+  .page-title .page-title-content ._blockquote-image {
+    background: url(/images/quotes.png) no-repeat;
+    width: 45px;
+    height: 110px;
+    display: inline-block;
+    float: left; }
+  .page-title .page-title-content ._blockquote-content {
+    color: #ffffff;
+    font-style: italic; }
+  .page-title .page-title-content ._blockquote-autor {
+    color: #999;
+    font-style: normal; }
 
+@media screen and (max-width: 768px) {
+  .page-title .page-title-content {
+    background-image: none;
+    height: 170px; } }
 * {
   box-sizing: border-box;
   margin: 0;

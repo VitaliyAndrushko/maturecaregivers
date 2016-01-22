@@ -39,12 +39,6 @@
     .content {
         padding-left: 0px;
         padding-right: 0px;
-        h3.post-title {
-            @extend h3-styles;        }
-
-        .description {
-            margin: 0 0 15px;
-        }
     }
 
     .welcome-btn {
@@ -137,15 +131,6 @@
         list-style: none;
         li > span {
             @extend list-li-strong;
-        }
-    }
-    ul.custom-list {
-        list-style: none;
-        i {
-            color: $borders-color;
-        }
-        li {
-            margin-bottom: 6px;
         }
     }
 }
