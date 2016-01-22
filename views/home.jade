@@ -9,8 +9,10 @@ block content
             img.img-responsive(src='/images/slide-3.jpg' alt='image')
             img.img-responsive(src='/images/slide-4.jpg' alt='image')
         .slider-nav
-            a#cycle-prev Prev
-            a#cycle-next Next
+            div#cycle-prev.btn
+                span.glyphicon.glyphicon-chevron-left
+            div#cycle-next.btn
+                span.glyphicon.glyphicon-chevron-right
 
     .separator-line.col-xs-12.m-b-15
 
@@ -22,8 +24,9 @@ block content
                 |We provide geriatric expertise and reliable in-home eldercare from
                 |certified providers age 50+. To inquire about services, click the
                 |'SEARCH NOW' button or call us at (888) 320-6700.
-        .welcome-btn.col-sm-5
-            a(href='/searchcare') SEARCH NOW
+        .welcome-btn.pull-right.btn-group
+            a.btn(href='/searchcare') Find Caregivers
+            div.btn.icon-arrow-rigth
 
     .separator-line.col-xs-12.m-b-15
 
@@ -129,17 +132,17 @@ block content
             p We listen to your needs and concerns and shape a solution.
             ul.custom-list.arrows-1
                 li 
-                    i.glyphicon.glyphicon.glyphicon-menu-right
+                    i.glyphicon.glyphicon-menu-right
                     span.p-l-5 Personal care
                 li 
-                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    i.glyphicon.glyphicon-menu-right 
                     span.p-l-5 Medication assistance
                 li 
-                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    i.glyphicon.glyphicon-menu-right 
                     span.p-l-5 Companionship
                 li 
-                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    i.glyphicon.glyphicon-menu-right 
                     span.p-l-5 Transportation
                 li 
-                    i.glyphicon.glyphicon.glyphicon-menu-right 
+                    i.glyphicon.glyphicon-menu-right 
                     span.p-l-5 Dementia

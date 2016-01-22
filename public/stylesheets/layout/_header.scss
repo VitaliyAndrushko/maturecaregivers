@@ -20,16 +20,12 @@
                 height: 70px;
                 width: 430px;
                 float: left;
-
-                img {
-                }
-
-                h1 {
-                    padding-left: 65px;
-                    margin-top: 0;
-                    @extend h1-style;
-                }
             }
+        }
+        h1 {
+            padding-left: 65px;
+            margin-top: 0;
+            @extend h1-style;
         }
     }
 
