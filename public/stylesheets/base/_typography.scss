@@ -32,6 +32,13 @@ $line-xs: 10px;
 /*mark all link to orange*/
 a {
 	color: $title-second;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
 }
 /*using for nav-bar menu items*/
 menu-styles {
@@ -93,24 +100,17 @@ h2-content-styles {
 	color: $h2-color;
     font-style: $style-italic;
 }
-
+/*using for italic font style*/
 italic-span {
 	color: $title-second;
 	font-style: $style-italic;
 }
-
-btn-styles {
-	font-family: $font-titles;
-	font-size: $size-title;
-	text-transform: uppercase;
-	text-shadow: 1px 1px $btn-shadows;
-}
-
+/*using for font-style for sm-btn*/
 btn-sm-style {
 	font-size: $size-small;
     color: $background-page;
 }
-
+/*show fot numbers in list*/
 list-number {
     display: block;
     color: $background-page;
@@ -118,12 +118,13 @@ list-number {
     font-size: $size-normal;
     text-align: center;
 }
-
+/*using to show line in strong font-style*/
 list-li-strong {
 	color: $custom-body;
     font-size: $size-normal-strong;
     font-weight: $style-bold;
 }
+/*using in footer*/
 footer-main {
 	text-decoration: none;
     font-family: $font-titles;

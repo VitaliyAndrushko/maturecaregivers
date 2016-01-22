@@ -6,6 +6,7 @@
 /*using in footer and other place to add shadows to text*/
 /*using for first part of title in grey color*/
 /*using for second part of titles in orange color*/
+/*style for main(big) btn*/
 /*Font clasess*/
 * {
   color: #747474;
@@ -15,7 +16,12 @@
 
 /*mark all link to orange*/
 a {
-  color: #db7030; }
+  color: #db7030;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
 
 /*using for nav-bar menu items*/
 menu-styles, .bs-navbar .navbar-nav li a {
@@ -23,7 +29,7 @@ menu-styles, .bs-navbar .navbar-nav li a {
   font-family: Yanone Kaffeesatz, Arial, sans-serif; }
 
 /*using for title that we use after logo in firs page*/
-h1-style, .bs-navbar div .navbar-header .navbar-brand h1 {
+h1-style, .bs-navbar div h1 {
   font-size: 13px;
   text-transform: uppercase;
   font-family: Arial, sans-serif;
@@ -76,20 +82,17 @@ h2-content-styles, .our-caregivers-block p.box-short-description {
   color: #999;
   font-style: italic; }
 
+/*using for italic font style*/
 italic-span {
   color: #db7030;
   font-style: italic; }
 
-btn-styles, .btn-main span.main {
-  font-family: Yanone Kaffeesatz, Arial, sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #252525; }
-
+/*using for font-style for sm-btn*/
 btn-sm-style, .btn-small {
   font-size: 11px;
   color: #f7f7f7; }
 
+/*show fot numbers in list*/
 list-number, .what-we-do-block .box-title .box-number-blue {
   display: block;
   color: #f7f7f7;
@@ -97,11 +100,13 @@ list-number, .what-we-do-block .box-title .box-number-blue {
   font-size: 14px;
   text-align: center; }
 
+/*using to show line in strong font-style*/
 list-li-strong, .home-about-block ul.latest-news li > span {
   color: #747474;
   font-size: 13px;
   font-weight: bold; }
 
+/*using in footer*/
 footer-main, footer .copyright a {
   text-decoration: none;
   font-family: Yanone Kaffeesatz, Arial, sans-serif;
@@ -452,7 +457,7 @@ footer-small, footer .copyright p {
   margin-top: 0px; }
 
 /*Backgrounds styles*/
-btn-main-image, .btn-main span.main {
+btn-main-image {
   background: url(../img/button.png) repeat-x; }
 
 btn-main-arrow-image {
@@ -469,6 +474,10 @@ list-arrow-image {
 
 box-list-blue-image {
   background: url(/images/box-disc-blue.png) no-repeat; }
+
+btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
+  background: url(/images/arrow-right.png) no-repeat;
+  background-position: center; }
 
 /*=====BACKGROUND PATTERNS=====*/
 .mosaic {
@@ -496,15 +505,18 @@ box-list-blue-image {
   background-image: url(../img/backgrounds/pattern-8.jpg); }
 
 /*Styles for btns*/
-.btn-main {
+.btn-main, .welcome-block .welcome-btn a, .welcome-block .welcome-btn .icon-arrow-rigth {
+  padding: 5px 15px;
   background-color: #4E4E4E;
-  height: 53px; }
-  .btn-main span.main {
-    margin-right: 2px;
-    display: block;
-    height: 23px;
-    float: left;
-    padding: 15px 20px; }
+  color: #f7f7f7;
+  font-family: Yanone Kaffeesatz, Arial, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #262626;
+  text-decoration: none;
+  border-radius: 0;
+  border-top: 3px solid #6e6e6e;
+  border-bottom: 3px solid #6e6e6e; }
 
 .btn-small {
   padding: 3px 7px;
@@ -547,9 +559,9 @@ box-list-blue-image {
       height: 70px;
       width: 430px;
       float: left; }
-      .bs-navbar div .navbar-header .navbar-brand h1 {
-        padding-left: 65px;
-        margin-top: 0; }
+    .bs-navbar div h1 {
+      padding-left: 65px;
+      margin-top: 0; }
   .bs-navbar .navbar-nav li {
     display: inline-block;
     margin-top: 25px; }
@@ -640,8 +652,24 @@ footer {
   margin-bottom: 40px; }
   .slider-block .cycle-slideshow img {
     width: 100%; }
-  .slider-block .slider-nav a#cycle-prev {
-    background: url("/images/slider-arrows.png") no-repeat left bottom; }
+  .slider-block .slider-nav {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    z-index: 110; }
+    .slider-block .slider-nav div {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #717173;
+      display: inline-block;
+      padding: 12px 12px; }
+      .slider-block .slider-nav div:hover {
+        background-color: #363637; }
+      .slider-block .slider-nav div span {
+        color: #ffffff; }
+    .slider-block .slider-nav div + div {
+      margin-left: 10px; }
 
 .welcome-block {
   padding-left: 0px;
@@ -653,24 +681,15 @@ footer {
     padding-right: 0px; }
     .welcome-block .content .description {
       margin: 0 0 15px; }
-  .welcome-block .welcome-btn {
-    text-align: right; }
-    .welcome-block .welcome-btn a {
-      position: absolute;
-      top: 5px;
-      right: 20px;
-      padding: 15px 20px;
-      background-color: #4e4e4e;
-      border-top: 3px solid #6e6e6e;
-      border-bottom: 3px solid #6e6e6e;
-      font-family: Yanone, Arial, sans-serif;
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-shadow: 1px 1px #252525;
-      color: #f7f7f7; }
-      .welcome-block .welcome-btn a:hover {
-        color: #ddd;
-        text-decoration: none; }
+  .welcome-block .welcome-btn a {
+    padding-right: 5px; }
+    .welcome-block .welcome-btn a:hover {
+      color: #ddd;
+      text-decoration: none; }
+  .welcome-block .welcome-btn .icon-arrow-rigth {
+    display: inline-block;
+    width: 45px;
+    height: 53px; }
 
 .short-summary-blocks .content-description {
   border-right: 1px solid #e7e7e7; }

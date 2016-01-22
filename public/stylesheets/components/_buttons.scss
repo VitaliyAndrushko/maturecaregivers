@@ -1,16 +1,16 @@
 /*Styles for btns*/
 .btn-main {
-	background-color: $btn-main-color;
-	height: 53px;
-	span.main {
-		@extend btn-styles;
-		margin-right: 2px;
-		display: block;
-		height: 23px;
-		@extend btn-main-image;
-		float: left;
-		padding: 15px 20px;
-	}
+	padding: 5px 15px;
+    background-color: $btn-main-color;
+    color: $background-page;
+    font-family: $font-titles;
+    font-size: $size-title;
+    text-transform: uppercase;
+    text-shadow: 1px 1px $text-shadows;
+    text-decoration: none;
+    border-radius: 0;
+    border-top: 3px solid $btn-border-color;
+    border-bottom: 3px solid $btn-border-color;
 }
 .btn-small {
 	@extend btn-sm-style;

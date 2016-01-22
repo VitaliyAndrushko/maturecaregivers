@@ -8,8 +8,26 @@
         }
     }
     .slider-nav {
-        a#cycle-prev {
-            background: url('/images/slider-arrows.png') no-repeat left bottom;
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        z-index: 110;
+        div {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $slider-arrow;
+            display: inline-block;
+            padding: 12px 12px;
+            &:hover {
+                background-color: $slider-arrow-hover;
+            }
+            span {
+                color: $white;
+            }
+        }
+        div + div {
+            margin-left: 10px;
         }
     }
 }
@@ -30,24 +48,20 @@
     }
 
     .welcome-btn {
-        text-align: right;
         a {
-            position: absolute;
-            top: 5px;
-            right: 20px;
-            padding: 15px 20px;
-            background-color: #4e4e4e;
-            border-top: 3px solid #6e6e6e;
-            border-bottom: 3px solid #6e6e6e;
-            font-family: Yanone, Arial, sans-serif;
-            font-size: 2rem;
-            text-transform: uppercase;
-            text-shadow: 1px 1px #252525;
-            color: #f7f7f7;
+            @extend .btn-main;
+            padding-right: 5px;
             &:hover {
-                color: #ddd;
+                color: $grey;
                 text-decoration: none;
             }
+        }
+        .icon-arrow-rigth {
+            @extend btn-main-arrow-right;
+            @extend .btn-main;
+            display: inline-block;
+            width: 45px;
+            height: 53px;
         }
     }
 }
