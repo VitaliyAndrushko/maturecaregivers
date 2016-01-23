@@ -6,13 +6,33 @@
         margin-bottom: 40px;
         background-color: #393bb3;
 
-        h2 {
+        h2._blockquote-title {
+            @extend h2-styles;
+            color: $white;
         }
+        ._blockquote-image {
+            background: url(/images/quotes.png) no-repeat;
+            width: 45px;
+            height: 110px;
+            display: inline-block;
+            float: left;
+        }
+        ._blockquote-content {
+            color: $white;
+            font-style: $style-italic;
+        }
+        ._blockquote-autor {
+            color: $h2-color;
+            font-style: $style-normal;
+        }
+    }
+}
 
-        div {
-            blockquote {
-                background: url(/images/quotes.png) no-repeat;
-            }
+@media screen and (max-width: 768px) {
+    .page-title {
+        .page-title-content {
+            background-image: none;
+            height: 170px;
         }
     }
 }

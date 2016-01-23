@@ -11,6 +11,7 @@
 @import 'components/_images-blocks.scss';
 @import 'layout/_header.scss';
 @import 'layout/_footer.scss';
+@import 'layout/_aside.scss';
 @import 'pages/_home.scss';
 @import 'pages/_about.scss';
 * {
@@ -32,4 +33,22 @@ body {
 	margin-top: 20px;
     padding: 30px 40px;
 	background-color: $background-page;
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+		margin-top: 0px;
+	    padding: 0;
+		background-color: $background-page;
+		.p-xs-15 {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.text-center-xs {
+			text-align: center;
+		}
+		.img-responsive {
+			display: inline-block;
+		}
+	}
+	
 }

@@ -1,0 +1,32 @@
+/*styles for aside*/
+.aside-block {
+	ul.custom-list {
+		li {
+			border-bottom: 1px solid $borders-color;
+			padding-bottom: 10px;
+		}
+	}
+	ul.nav-pills {
+		li {
+			a, 
+			a:hover, 
+			a.active, 
+			a:focus {
+				color: inherit;
+				background-color: transparent;
+				padding-left: 2px;
+				padding-right: 2px;
+				border-radius: 0;
+			}
+		}
+		li.active, 
+		li:hover {
+			a {
+				border-bottom: 1px solid $title-second;
+			}
+		}
+		li+li {
+			padding-left: 15px;
+		}
+	}
+}

@@ -138,3 +138,24 @@ footer-small {
     font-size: $size-xs;
     text-shadow: 1px 1px 1px $text-shadows;
 }
+
+/*Helpers clasess*/
+h3.post-title {
+    @extend h3-styles;
+    .description {
+        margin: 10px 0 15px;
+    }
+}
+h3.post-title-single {
+    @extend h3-styles;
+    color: $title-second;
+    .description {
+        margin: 10px 0 15px;
+    }
+}
+ul.custom-list {
+    list-style: none;
+    i {
+        color: $borders-color;
+    }
+}
