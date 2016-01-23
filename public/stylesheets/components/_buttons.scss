@@ -25,6 +25,13 @@
     	color: $white;
     }
 }
+.btn-input {
+	background: $title-second;
+	color: $white;
+	&:hover {
+		background: $btn-hover;
+	}
+}
 @media screen and (max-width: 768px) {
 	.btn-small {
 		padding: 10px 15px;
