@@ -23,6 +23,9 @@ a {
   a:visited {
     text-decoration: none; }
 
+p.description {
+  text-align: justify; }
+
 /*using for nav-bar menu items*/
 menu-styles, .bs-navbar .navbar-nav li a {
   font-size: 20px;
@@ -51,7 +54,7 @@ h3-styles, h3.post-title, h3.post-title-single {
     font-family: Yanone Kaffeesatz, Arial, sans-serif; }
 
 /*using for small title e.g. to named images in first page*/
-h4-styles, .our-caregivers-block h4.box-name-title {
+h4-styles, h4.box-name-title {
   font-size: 18px;
   color: #db7030;
   font-family: Yanone Kaffeesatz, Arial, sans-serif; }
@@ -78,7 +81,7 @@ h2-styles, .short-summary-blocks h2.info-title, .page-title .page-title-content 
   text-transform: uppercase; }
 
 /*using for italic short description in information block*/
-h2-content-styles, .our-caregivers-block p.box-short-description {
+h2-content-styles, p.box-short-description, .testimonial-item p.box-short-description {
   color: #999;
   font-style: italic; }
 
@@ -93,7 +96,7 @@ btn-sm-style, .btn-small {
   color: #f7f7f7; }
 
 /*show fot numbers in list*/
-list-number, .what-we-do-block .box-title .box-number-blue {
+list-number, .box-number-blue {
   display: block;
   color: #f7f7f7;
   font-family: Tahoma, Arial, sans-serif;
@@ -133,6 +136,28 @@ ul.custom-list {
   list-style: none; }
   ul.custom-list i {
     color: #e7e7e7; }
+
+.box-number-blue {
+  padding-top: 6px;
+  width: 33px;
+  height: 33px;
+  background-color: #393BB3;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px; }
+
+a.custom-link {
+  color: #db7030; }
+  a.custom-link:hover {
+    text-decoration: underline;
+    color: #db7030; }
+  a.custom-link:visited {
+    color: #db7030; }
+
+h2.bold-title-item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px; }
 
 /*Styles for helpers*/
 .m-l-0 {
@@ -559,6 +584,23 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
   .zoom-on-image img:hover + span {
     display: inline-block; }
 
+.img-container {
+  height: 100px;
+  width: 75px;
+  display: table-cell;
+  float: left;
+  margin-right: 20px; }
+
+.content a.zoom {
+  display: block; }
+  .content a.zoom img:hover {
+    opacity: 0.4; }
+
+img.box-img {
+  padding: 3px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 5px; }
+
 .bs-navbar {
   border-left: 0;
   border-right: 0;
@@ -731,29 +773,12 @@ footer {
 .short-summary-blocks .content-description {
   border-right: 1px solid #e7e7e7; }
 
-.what-we-do-block .box-title .box-number-blue {
-  padding-top: 6px;
-  width: 33px;
-  height: 33px;
-  background-color: #393BB3;
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px; }
 .what-we-do-block .box-title h3.box-item-title {
   padding-bottom: 3px;
   margin-bottom: 0; }
 .what-we-do-block .box-title span.box-subtitle {
   display: block;
   margin-bottom: 12px; }
-
-.our-caregivers-block .content a.zoom {
-  display: block; }
-  .our-caregivers-block .content a.zoom img:hover {
-    opacity: 0.4; }
-.our-caregivers-block img.box-img {
-  padding: 3px;
-  border: 1px solid #e7e7e7;
-  margin-bottom: 5px; }
 
 .home-about-block h3.third-info-title {
   margin-bottom: 2px; }
@@ -795,6 +820,15 @@ footer {
   .page-title .page-title-content {
     background-image: none;
     height: 170px; } }
+@media screen and (max-width: 350px) {
+  .page-title .page-title-content {
+    background-image: none;
+    height: 200px; } }
+/*Styles for testimonials*/
+.testimonial-item p.box-short-description {
+  color: inherit;
+  font-size: 15px; }
+
 * {
   box-sizing: border-box;
   margin: 0;

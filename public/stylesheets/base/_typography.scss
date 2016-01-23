@@ -40,6 +40,9 @@ a {
         text-decoration: none;
     }
 }
+p.description {
+    text-align: justify;
+}
 /*using for nav-bar menu items*/
 menu-styles {
 	font-size: $size-medium;
@@ -158,4 +161,35 @@ ul.custom-list {
     i {
         color: $borders-color;
     }
+}
+.box-number-blue {
+    @extend list-number;
+    padding-top: 6px;
+    width: 33px;
+    height: 33px;
+    background-color: $blue;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+a.custom-link {
+    color: $title-second;
+    &:hover {
+        text-decoration: underline;
+        color: $title-second;
+    }
+    &:visited {
+        color: $title-second;
+    }
+}
+p.box-short-description {
+    @extend h2-content-styles;
+}
+h4.box-name-title {
+    @extend h4-styles;
+}
+h2.bold-title-item {
+    font-size: $size-normal;
+    font-weight: $style-bold;
+    line-height: 18px;
 }

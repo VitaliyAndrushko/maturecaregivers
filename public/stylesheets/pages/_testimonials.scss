@@ -1,0 +1,8 @@
+/*Styles for testimonials*/
+.testimonial-item {
+	p.box-short-description {
+	    @extend h2-content-styles;
+	    color: inherit;
+	    font-size: 15px;
+	}
+}

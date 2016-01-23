@@ -72,16 +72,6 @@
 }
 .what-we-do-block {    
     .box-title {
-        .box-number-blue {
-            @extend list-number;
-            padding-top: 6px;
-            width: 33px;
-            height: 33px;
-            background-color: $blue;
-            border-radius: 50%;
-            float: left;
-            margin-right: 10px;
-        }
         h3.box-item-title {
             @extend box-h3-style;
             padding-bottom: 3px;
@@ -92,29 +82,6 @@
             display: block;
             margin-bottom: 12px;
         }
-    }
-}
-.our-caregivers-block {
-    p.box-short-description {
-        @extend h2-content-styles;
-    }
-    .content {
-        a.zoom {
-            display: block;
-            img {
-                &:hover {
-                    opacity: 0.4;
-                }
-            }
-        }
-    }
-    img.box-img {
-            padding: 3px;
-            border: 1px solid $borders-color;
-            margin-bottom: 5px;
-    }
-    h4.box-name-title {
-        @extend h4-styles;
     }
 }
 .home-about-block {
