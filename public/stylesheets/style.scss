@@ -9,12 +9,13 @@
 @import 'components/_backgrounds.scss';
 @import 'components/_buttons.scss';
 @import 'components/_images-blocks.scss';
+@import 'pages/_include.scss';
 @import 'layout/_header.scss';
 @import 'layout/_footer.scss';
 @import 'layout/_aside.scss';
 @import 'pages/_home.scss';
-@import 'pages/_include.scss';
 @import 'pages/_testimonials.scss';
+@import 'pages/_contact.scss';
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -51,5 +52,5 @@ body {
 			display: inline-block;
 		}
 	}
-	
+
 }

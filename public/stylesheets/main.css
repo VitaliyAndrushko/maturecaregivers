@@ -73,7 +73,7 @@ xs-subtitle, .what-we-do-block .box-title span.box-subtitle, .home-about-block s
   text-transform: uppercase; }
 
 /*using for titles in information block, e.g. on first page "What we do"*/
-h2-styles, .short-summary-blocks h2.info-title, .page-title .page-title-content h2._blockquote-title {
+h2-styles, .page-title .page-title-content h2._blockquote-title, .short-summary-blocks h2.info-title {
   font-family: Yanone Kaffeesatz, Arial, sans-serif;
   font-size: 34px;
   line-height: 36px;
@@ -607,6 +607,35 @@ img.box-img {
   border: 1px solid #e7e7e7;
   margin-bottom: 5px; }
 
+.page-title .page-title-content {
+  background: url(/images/title-stripes.png) no-repeat 20px 0px;
+  margin: 0 auto;
+  height: 132px;
+  margin-bottom: 40px;
+  background-color: #393bb3; }
+  .page-title .page-title-content h2._blockquote-title {
+    color: #ffffff; }
+  .page-title .page-title-content ._blockquote-image {
+    background: url(/images/quotes.png) no-repeat;
+    width: 45px;
+    height: 110px;
+    display: inline-block;
+    float: left; }
+  .page-title .page-title-content ._blockquote-content {
+    color: #ffffff;
+    font-style: italic; }
+  .page-title .page-title-content ._blockquote-autor {
+    color: #999;
+    font-style: normal; }
+
+@media screen and (max-width: 768px) {
+  .page-title .page-title-content {
+    background-image: none;
+    height: 170px; } }
+@media screen and (max-width: 350px) {
+  .page-title .page-title-content {
+    background-image: none;
+    height: 200px; } }
 .bs-navbar {
   border-left: 0;
   border-right: 0;
@@ -779,29 +808,12 @@ footer {
 .short-summary-blocks .content-description {
   border-right: 1px solid #e7e7e7; }
 
-.what-we-do-block .box-title .box-number-blue {
-  padding-top: 6px;
-  width: 33px;
-  height: 33px;
-  background-color: #393BB3;
-  border-radius: 50%;
-  float: left;
-  margin-right: 10px; }
 .what-we-do-block .box-title h3.box-item-title {
   padding-bottom: 3px;
   margin-bottom: 0; }
 .what-we-do-block .box-title span.box-subtitle {
   display: block;
   margin-bottom: 12px; }
-
-.our-caregivers-block .content a.zoom {
-  display: block; }
-  .our-caregivers-block .content a.zoom img:hover {
-    opacity: 0.4; }
-.our-caregivers-block img.box-img {
-  padding: 3px;
-  border: 1px solid #e7e7e7;
-  margin-bottom: 5px; }
 
 .home-about-block h3.third-info-title {
   margin-bottom: 2px; }
@@ -818,31 +830,11 @@ footer {
 
   .short-summary-blocks .content-description {
     border-right: 0px solid transparent; } }
-.page-title .page-title-content {
-  background: url(/images/title-stripes.png) no-repeat 20px 0px;
-  margin: 0 auto;
-  height: 132px;
-  margin-bottom: 40px;
-  background-color: #393bb3; }
-  .page-title .page-title-content h2._blockquote-title {
-    color: #ffffff; }
-  .page-title .page-title-content ._blockquote-image {
-    background: url(/images/quotes.png) no-repeat;
-    width: 45px;
-    height: 110px;
-    display: inline-block;
-    float: left; }
-  .page-title .page-title-content ._blockquote-content {
-    color: #ffffff;
-    font-style: italic; }
-  .page-title .page-title-content ._blockquote-autor {
-    color: #999;
-    font-style: normal; }
+/*Styles for testimonials*/
+.testimonial-item p.box-short-description {
+  color: inherit;
+  font-size: 15px; }
 
-@media screen and (max-width: 768px) {
-  .page-title .page-title-content {
-    background-image: none;
-    height: 170px; } }
 #google-map {
   margin-bottom: 40px;
   padding: 6px 6px 6px 6px;
@@ -881,4 +873,4 @@ body {
     .wrapper .img-responsive {
       display: inline-block; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
