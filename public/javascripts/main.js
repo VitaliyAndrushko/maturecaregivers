@@ -5,13 +5,11 @@ $(document).ready(function(){
 
     //INITIALIZES CYCLE2 PLUGIN
 	$('.cycle-slideshow').cycle({
-		fx:      'fade', // transition type
+		fx:      'fade',
 		speed:    3000,
 		timeout:  5000,
 		nowrap:  1,
-		cleartype: false,   //  Fixes the issue with IE6+
-		startingSlide: 0,
-		// next: '#cycle-next',
-		// prev: '#cycle-prev'
+		cleartype: false,
+		startingSlide: 0
 	});
 });

@@ -24,11 +24,11 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/stylesheets/style.css': 'public/stylesheets/style.scss'
+                    'public/stylesheets/main.css': 'public/stylesheets/style.scss'
                 }
             }
         },
-        copy: {        
+        copy: {
             files: {
                 src: 'public/fonts/**',
                 dest: 'public/stylesheets/fonts/',
