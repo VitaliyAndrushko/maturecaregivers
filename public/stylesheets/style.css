@@ -568,6 +568,12 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
     text-decoration: none;
     color: #ffffff; }
 
+.btn-input {
+  background: #db7030;
+  color: #ffffff; }
+  .btn-input:hover {
+    background: #565656; }
+
 @media screen and (max-width: 768px) {
   .btn-small {
     padding: 10px 15px;
@@ -773,12 +779,29 @@ footer {
 .short-summary-blocks .content-description {
   border-right: 1px solid #e7e7e7; }
 
+.what-we-do-block .box-title .box-number-blue {
+  padding-top: 6px;
+  width: 33px;
+  height: 33px;
+  background-color: #393BB3;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px; }
 .what-we-do-block .box-title h3.box-item-title {
   padding-bottom: 3px;
   margin-bottom: 0; }
 .what-we-do-block .box-title span.box-subtitle {
   display: block;
   margin-bottom: 12px; }
+
+.our-caregivers-block .content a.zoom {
+  display: block; }
+  .our-caregivers-block .content a.zoom img:hover {
+    opacity: 0.4; }
+.our-caregivers-block img.box-img {
+  padding: 3px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 5px; }
 
 .home-about-block h3.third-info-title {
   margin-bottom: 2px; }
@@ -820,14 +843,15 @@ footer {
   .page-title .page-title-content {
     background-image: none;
     height: 170px; } }
-@media screen and (max-width: 350px) {
-  .page-title .page-title-content {
-    background-image: none;
-    height: 200px; } }
-/*Styles for testimonials*/
-.testimonial-item p.box-short-description {
-  color: inherit;
-  font-size: 15px; }
+#google-map {
+  margin-bottom: 40px;
+  padding: 6px 6px 6px 6px;
+  border: 1px solid #d1d1d1; }
+  #google-map small {
+    color: #0000FF;
+    text-align: left; }
+    #google-map small:hover {
+      text-decoration: underline; }
 
 * {
   box-sizing: border-box;

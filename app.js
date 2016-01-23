@@ -10,9 +10,7 @@ var nodemailer = require('nodemailer');
 
 var home = require('./routes/home');
 var about = require('./routes/about');
-var services = require('./routes/services');
-var testimonials = require('./routes/testimonials');
-var faqs = require('./routes/faqs');
+var contact = require('./routes/contact');
 var users = require('./routes/users');
 
 var app = express();
@@ -32,9 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', home);
 app.use('/about', about);
-app.use('/services', services);
-app.use('/testimonials', testimonials);
-app.use('/faqs', faqs);
+app.use('/contact', contact);
 app.use('/users', users);
 
 

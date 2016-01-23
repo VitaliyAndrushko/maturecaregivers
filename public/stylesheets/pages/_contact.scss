@@ -1,0 +1,12 @@
+#google-map {
+    margin-bottom: 40px;
+    padding: 6px 6px 6px 6px;
+    border: 1px solid #d1d1d1;
+    small {
+        color: #0000FF;
+        text-align: left;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
