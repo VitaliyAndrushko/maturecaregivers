@@ -36,3 +36,12 @@
         }
     }
 }
+@media screen and (max-width: 350px) {
+    .page-title {
+        .page-title-content {
+            background-image: none;
+            height: 200px;
+        }
+    }
+}
+

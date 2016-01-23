@@ -12,3 +12,25 @@
 	    display: inline-block;
 	}
 }
+.img-container {
+    height: 100px;
+    width: 75px;
+    display: table-cell;
+    float: left;
+    margin-right: 20px;
+}
+.content {
+    a.zoom {
+        display: block;
+        img {
+            &:hover {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+img.box-img {
+        padding: 3px;
+        border: 1px solid $borders-color;
+        margin-bottom: 5px;
+}
