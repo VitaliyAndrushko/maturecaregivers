@@ -27,19 +27,19 @@ block content
         form#contact_form.col-xs-10.col-xs-offset-1(method='post', action='contact/send')
             .input-group.col-xs-12.col-sm-10.m-b-25
                 p Name:
-                input.form-control(type='text', name='name', required='')
+                input.form-control(type='text', name='name', required)
                 p.home_contact_error_name.error_contact
             .input-group.col-xs-12.col-sm-10.m-b-25
                 p Email:
-                input.form-control(type='email', name='email', required='')
+                input.form-control(type='email', name='email', required)
                 p.home_contact_error_email.error_contact
             .input-group.col-xs-12.col-sm-10.m-b-25
                 p Subject:
-                input.form-control(type='text', name='subject', required='')
+                input.form-control(type='text', name='subject', required)
                 p.home_contact_error_subject.error_contact
             .input-group.col-xs-12.col-sm-10
                 p Message:
-                textarea.form-control(name='message', rows='8' required='')
+                textarea.form-control(type='text', name='message', rows='8' required)
                 p.home_contact_error_message.error_contact
             .input-group.honeypot.invisible
                 input(tabindex='-1', name='content', type='text')
