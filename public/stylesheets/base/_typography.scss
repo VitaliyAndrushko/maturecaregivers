@@ -193,3 +193,9 @@ h2.bold-title-item {
     font-weight: $style-bold;
     line-height: 18px;
 }
+.btn.text-left {
+    text-align: left;
+}
+.form-control {
+    border-radius: 0;
+}

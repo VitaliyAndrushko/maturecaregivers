@@ -25,6 +25,11 @@
     	color: $white;
     }
 }
+.btn-submit {
+    @extend .btn-small;
+    padding: 8px 25px;
+    font-size: $size-normal;
+}
 .btn-input {
 	background: $title-second;
 	color: $white;

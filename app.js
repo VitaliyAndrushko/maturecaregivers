@@ -14,6 +14,7 @@ var services = require('./routes/services');
 var testimonials = require('./routes/testimonials');
 var contact = require('./routes/contact');
 var faqs = require('./routes/faqs');
+var findform = require('./routes/findform');
 var users = require('./routes/users');
 
 var app = express();
@@ -37,6 +38,7 @@ app.use('/services', services);
 app.use('/testimonials', testimonials);
 app.use('/faqs', faqs);
 app.use('/contact', contact);
+app.use('/findform', findform);
 app.use('/users', users);
 
 

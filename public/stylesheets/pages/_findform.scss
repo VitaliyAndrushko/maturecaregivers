@@ -1,0 +1,23 @@
+.page-title-findform {
+	.page-title-content {
+		margin: 0 auto;
+	    height: 40px;
+		margin-bottom: 40px;
+	    background-color: $blue;
+	    h3.findform-title {
+            @extend h3-styles;
+            color: $white;
+            padding-top: 8px;
+	    }
+	}
+}
+@media screen and (max-width: 768px) {
+    .page-title-findform {
+		.page-title-content {
+			margin-bottom: 0px;
+		}
+	}
+	form.findform {
+		padding-top: 15px;
+	}
+}
