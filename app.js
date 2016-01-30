@@ -17,7 +17,7 @@ var faqs = require('./routes/faqs');
 var users = require('./routes/users');
 
 var app = express();
-module.exports = app.listen(3000);
+module.exports = app.listen(process.env.PORT || 3000)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
