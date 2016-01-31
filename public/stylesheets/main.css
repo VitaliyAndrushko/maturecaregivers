@@ -40,13 +40,13 @@ h1-style, .bs-navbar div h1 {
   font-weight: normal; }
 
 /*using for post-title, e.g. on first page "Welcom To MatureCaregivers"*/
-h3-styles, h3.post-title, h3.post-title-single {
+h3-styles, h3.post-title, h3.post-title-single, .page-title-findform .page-title-content h3.findform-title {
   font-size: 26px;
   color: #6b6b6b;
   font-weight: normal;
   line-height: 22px;
   font-family: Yanone Kaffeesatz, Arial, sans-serif; }
-  h3-styles span, h3.post-title span, h3.post-title-single span {
+  h3-styles span, h3.post-title span, h3.post-title-single span, .page-title-findform .page-title-content h3.findform-title span {
     color: #db7030;
     font-size: 26px;
     font-weight: normal;
@@ -91,7 +91,7 @@ italic-span {
   font-style: italic; }
 
 /*using for font-style for sm-btn*/
-btn-sm-style, .btn-small {
+btn-sm-style, .btn-small, .btn-submit {
   font-size: 11px;
   color: #f7f7f7; }
 
@@ -158,6 +158,12 @@ h2.bold-title-item {
   font-size: 14px;
   font-weight: bold;
   line-height: 18px; }
+
+.btn.text-left {
+  text-align: left; }
+
+.form-control {
+  border-radius: 0; }
 
 /*Styles for helpers*/
 .m-l-0 {
@@ -544,7 +550,7 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
   background-image: url(../img/backgrounds/pattern-8.jpg); }
 
 /*Styles for btns*/
-.btn-main, .welcome-block .welcome-btn div.main-b {
+.btn-main, .welcome-block .welcome-btn .main-b {
   padding: 5px 15px;
   background-color: #4E4E4E;
   color: #f7f7f7;
@@ -557,16 +563,20 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
   border-top: 3px solid #6e6e6e;
   border-bottom: 3px solid #6e6e6e; }
 
-.btn-small {
+.btn-small, .btn-submit {
   padding: 3px 7px;
   background: #db7030;
   display: inline-block;
   margin-bottom: 15px;
   color: #ffffff; }
-  .btn-small:hover {
+  .btn-small:hover, .btn-submit:hover {
     background: #565656;
     text-decoration: none;
     color: #ffffff; }
+
+.btn-submit {
+  padding: 8px 25px;
+  font-size: 14px; }
 
 .btn-input {
   background: #db7030;
@@ -575,7 +585,7 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
     background: #565656; }
 
 @media screen and (max-width: 768px) {
-  .btn-small {
+  .btn-small, .btn-submit {
     padding: 10px 15px;
     text-align: center; } }
 /*styles for icons-images*/
@@ -793,10 +803,10 @@ footer {
   .welcome-block .welcome-btn {
     width: 200px;
     float: right; }
-    .welcome-block .welcome-btn div.main-b {
+    .welcome-block .welcome-btn .main-b {
       padding-right: 5px;
       width: 100%; }
-      .welcome-block .welcome-btn div.main-b:hover {
+      .welcome-block .welcome-btn .main-b:hover {
         color: #ddd;
         text-decoration: none; }
     .welcome-block .welcome-btn .icon-arrow-rigth {
@@ -845,6 +855,21 @@ footer {
     #google-map small:hover {
       text-decoration: underline; }
 
+.page-title-findform .page-title-content {
+  margin: 0 auto;
+  height: 40px;
+  margin-bottom: 40px;
+  background-color: #393BB3; }
+  .page-title-findform .page-title-content h3.findform-title {
+    color: #ffffff;
+    padding-top: 8px; }
+
+@media screen and (max-width: 768px) {
+  .page-title-findform .page-title-content {
+    margin-bottom: 0px; }
+
+  form.findform {
+    padding-top: 15px; } }
 * {
   box-sizing: border-box;
   margin: 0;

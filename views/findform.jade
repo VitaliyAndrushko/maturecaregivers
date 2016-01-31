@@ -1,0 +1,172 @@
+extends layout
+
+block content
+    
+    .page-title-findform.col-sm-12
+        .page-title-content
+            h3.text-center.findform-title Find Caregivers
+    form.p-50.findform
+        h3.post-title-single.col-xs-12.p-l-15.p-b-15 Client information
+        div.col-sm-6.col-xs-12
+            div.form-group.p-r-0
+                label.col-xs-12.p-l-0 Who is the care for?
+                select.form-control
+                    option Please select
+                    option Self
+                    option Spouse
+                    option Couple
+                    option Grandparent
+                    option Parent
+                    option Other
+        div.col-sm-6.col-xs-12
+            div.form-group.p-r-0
+                label Age of care recipient?
+                select.form-control
+                    option Please select
+                    option 45-54
+                    option 55-64
+                    option 65-74
+                    option 75-84
+                    option 85 +
+        div.col-sm-6.col-xs-12
+            div.form-group
+                label.col-xs-12.p-l-0.p-t-15.p-r-0 Enter location where care is required?
+                div.col-xs-7.p-l-0
+                    input.form-control(placeholder='City')
+                div.col-xs-5.p-r-0.p-l-0
+                    input.form-control(placeholder='State')
+        div.col-sm-6.col-xs-12
+            div.form-group
+                label.col-xs-12.p-l-0.p-t-15.p-r-0 Current living situation?
+                select.form-control
+                    option Please select
+                    option Home (lives alone)
+                    option Home (lives with family member)
+                    option Hospital
+                    option Retirement community
+                    option Assisted living        
+        div.col-xs-12.col-sm-12.col-md-6.p-t-15
+            div.form-group
+                label.col-xs-12.p-l-0 Estimated level of care?
+                div.col-xs-12.p-l-0.p-r-0
+                    select.form-control
+                        option Please select
+                        option Minimal (less than 10 hours/week)
+                        option Basic (less than 20 hours/week)
+                        option Daily (20+ hours/week)
+                        option Full-time (40+ hours/week)
+        div.col-xs-12.m-b-15.p-t-15
+            div.form-group
+                label.col-xs-12.p-l-0 General Services Needed (select all that apply)
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Meal preparation
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span House-keeping
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Bathing and dressing
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Medication
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Transportation services
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Toileting
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Alzheimers
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Dementia care
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='') 
+                            span Short term help
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox
+                        label
+                            input(type='checkbox' value='' for='respiteCare') 
+                            span(id='respiteCare') Respite care
+                div.col-sm-4.col-xs-12.p-l-0
+                    div.checkbox.success
+                        label
+                            input(type='checkbox' value='') 
+                            span Other
+        .separator-line.col-xs-12.m-b-15.m-l-15
+        h3.post-title-single.col-xs-12.p-l-15.p-b-15 Payment
+        div.col-xs-12
+            div.form-group
+                label.col-xs-12.p-l-0 How do you plan on financing?
+                div.col-sm-6.col-xs-12.p-l-0
+                    div.radio
+                        label
+                            input(type='radio' name='optRadioFinancing')
+                            span Private funds
+                div.col-sm-6.col-xs-12.p-l-0
+                    div.radio
+                        label
+                            input(type='radio' name='optRadioFinancing')
+                            span Long term care insurance
+                div.col-sm-6.col-xs-12.p-l-0
+                    div.radio
+                        label
+                            input(type='radio' name='optRadioFinancing')
+                            span Medicaid/public assistance only
+                div.col-sm-6.col-xs-12.p-l-0
+                    div.radio
+                        label
+                            input(type='radio' name='optRadioFinancing')
+                            span Reverse Mortgage
+                div.col-sm-6.col-xs-12.p-l-0
+                    div.radio
+                        label
+                            input(type='radio' name='optRadioFinancing')
+                            span Other (social security, VA benefits, etc.)
+        .separator-line.col-xs-12.m-b-15.m-l-15
+        h3.post-title-single.col-xs-12.p-l-15.p-b-15 Contact information
+        div.col-xs-12
+            div.form-group
+                label.col-xs-12.p-l-0 
+                    |Please let us know how to contact you to follow up.
+                div.col-sm-6.col-xs-12.p-l-0.p-b-20
+                    input.form-control(placeholder='First Name')
+                div.col-sm-6.col-xs-12.p-l-0.p-b-20
+                    input.form-control(placeholder='Last Name')
+                div.col-sm-6.col-xs-12.p-l-0.p-b-20
+                    input.form-control(placeholder='Phone')
+                div.col-sm-6.col-xs-12.p-l-0.p-b-20
+                    input.form-control(placeholder='Email' type='email')
+        div.col-xs-12
+            div.form-group
+                label.col-xs-12.p-l-0 
+                    |Have you hired a caregiver in the past?
+                div.col-sm-6.col-xs-12.p-l-0
+                    label.radio-inline.p-r-25
+                        input(type='radio' name='optLastQuestion')
+                        |Yes
+                    label.radio-inline
+                        input(type='radio' name='optLastQuestion')
+                        |No
+        div.col-xs-12.p-t-35.p-r-30.p-b-40
+            a.btn-submit.button.col-sm-2.col-xs-12.text-center Submit
