@@ -12,4 +12,8 @@ $(document).ready(function(){
 		cleartype: false,
 		startingSlide: 0
 	});
+
+	if ( $('#contact-modal').attr('data-success') === 'success' ) {
+		$('#contact-modal').modal('show');
+	}
 });
