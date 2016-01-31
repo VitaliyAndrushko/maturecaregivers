@@ -79,3 +79,17 @@ block content
                     strong E-mail:
                     br
                     |support@maturecaregivers.com
+    .modal#contact-modal.fade(tabindex='-1', role='dialog', data-success=(success === true ? 'success' : ''))
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4.modal-title Modal title
+                .modal-body
+                    p
+                        |Thank you for submitting your inquiry with Mature Caregivers.
+                        |We look forward to helping you with expert guidance and in-home
+                        |care for your loved one. A representative will contact you very shortly.
+                .modal-footer
+                    button.btn.btn-default(type='button', data-dismiss='modal') Close

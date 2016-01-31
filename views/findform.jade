@@ -1,117 +1,117 @@
 extends layout
 
 block content
-    
+
     .page-title-findform.col-sm-12
         .page-title-content
             h3.text-center.findform-title Find Caregivers
-    form.p-50.findform
+    form#findform.p-50.findform(method='post', action='findform/send')
         h3.post-title-single.col-xs-12.p-l-15.p-b-15 Client information
         div.col-sm-6.col-xs-12
             div.form-group.p-r-0
                 label.col-xs-12.p-l-0 Who is the care for?
-                select.form-control
-                    option Please select
-                    option Self
-                    option Spouse
-                    option Couple
-                    option Grandparent
-                    option Parent
-                    option Other
+                select.form-control(name='careFor' required)
+                    option(value='') Please select
+                    option(value='Self') Self
+                    option(value='Spouse') Spouse
+                    option(value='Couple') Couple
+                    option(value='Grandparent') Grandparent
+                    option(value='Parent') Parent
+                    option(value='Other') Other
         div.col-sm-6.col-xs-12
             div.form-group.p-r-0
                 label Age of care recipient?
-                select.form-control
-                    option Please select
-                    option 45-54
-                    option 55-64
-                    option 65-74
-                    option 75-84
-                    option 85 +
+                select.form-control(name='age' required)
+                    option(value='') Please select
+                    option(value='45-54') 45-54
+                    option(value='55-64') 55-64
+                    option(value='65-74') 65-74
+                    option(value='75-84') 75-84
+                    option(value='85 +') 85 +
         div.col-sm-6.col-xs-12
             div.form-group
                 label.col-xs-12.p-l-0.p-t-15.p-r-0 Enter location where care is required?
                 div.col-xs-7.p-l-0
-                    input.form-control(placeholder='City')
+                    input.form-control(placeholder='City', type='text', name='city', required)
                 div.col-xs-5.p-r-0.p-l-0
-                    input.form-control(placeholder='State')
+                    input.form-control(placeholder='State', type='text', name='state', required)
         div.col-sm-6.col-xs-12
             div.form-group
                 label.col-xs-12.p-l-0.p-t-15.p-r-0 Current living situation?
-                select.form-control
-                    option Please select
-                    option Home (lives alone)
-                    option Home (lives with family member)
-                    option Hospital
-                    option Retirement community
-                    option Assisted living        
+                select.form-control(name='living' required)
+                    option(value='') Please select
+                    option(value='Home (lives alone)') Home (lives alone)
+                    option(value='Home (lives with family member)') Home (lives with family member)
+                    option(value='Hospital') Hospital
+                    option(value='Retirement community') Retirement community
+                    option(value='Assisted living') Assisted living
         div.col-xs-12.col-sm-12.col-md-6.p-t-15
             div.form-group
                 label.col-xs-12.p-l-0 Estimated level of care?
                 div.col-xs-12.p-l-0.p-r-0
-                    select.form-control
-                        option Please select
-                        option Minimal (less than 10 hours/week)
-                        option Basic (less than 20 hours/week)
-                        option Daily (20+ hours/week)
-                        option Full-time (40+ hours/week)
+                    select.form-control(name='level' required)
+                        option(value='') Please select
+                        option(value='Minimal (less than 10 hours/week)') Minimal (less than 10 hours/week)
+                        option(value='Basic (less than 20 hours/week)') Basic (less than 20 hours/week)
+                        option(value='Daily (20+ hours/week)') Daily (20+ hours/week)
+                        option(value='Full-time (40+ hours/week)') Full-time (40+ hours/week)
         div.col-xs-12.m-b-15.p-t-15
             div.form-group
                 label.col-xs-12.p-l-0 General Services Needed (select all that apply)
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Meal preparation')
                             span Meal preparation
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='House-keeping')
                             span House-keeping
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Bathing and dressing')
                             span Bathing and dressing
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Medication')
                             span Medication
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Transportation services')
                             span Transportation services
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Toileting')
                             span Toileting
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Alzheimers')
                             span Alzheimers
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Dementia care')
                             span Dementia care
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Short term help')
                             span Short term help
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox
                         label
-                            input(type='checkbox' value='' for='respiteCare') 
+                            input(type='checkbox' name='services' value='Respite care' for='respiteCare')
                             span(id='respiteCare') Respite care
                 div.col-sm-4.col-xs-12.p-l-0
                     div.checkbox.success
                         label
-                            input(type='checkbox' value='') 
+                            input(type='checkbox' name='services' value='Other')
                             span Other
         .separator-line.col-xs-12.m-b-15.m-l-15
         h3.post-title-single.col-xs-12.p-l-15.p-b-15 Payment
@@ -121,52 +121,52 @@ block content
                 div.col-sm-6.col-xs-12.p-l-0
                     div.radio
                         label
-                            input(type='radio' name='optRadioFinancing')
+                            input(type='radio' name='optRadioFinancing' value='Private funds')
                             span Private funds
                 div.col-sm-6.col-xs-12.p-l-0
                     div.radio
                         label
-                            input(type='radio' name='optRadioFinancing')
+                            input(type='radio' name='optRadioFinancing' value='Long term care insurance')
                             span Long term care insurance
                 div.col-sm-6.col-xs-12.p-l-0
                     div.radio
                         label
-                            input(type='radio' name='optRadioFinancing')
+                            input(type='radio' name='optRadioFinancing' value='Medicaid/public assistance only')
                             span Medicaid/public assistance only
                 div.col-sm-6.col-xs-12.p-l-0
                     div.radio
                         label
-                            input(type='radio' name='optRadioFinancing')
+                            input(type='radio' name='optRadioFinancing' value='Reverse Mortgage')
                             span Reverse Mortgage
                 div.col-sm-6.col-xs-12.p-l-0
                     div.radio
                         label
-                            input(type='radio' name='optRadioFinancing')
+                            input(type='radio' name='optRadioFinancing' value='Other (social security, VA benefits, etc.)')
                             span Other (social security, VA benefits, etc.)
         .separator-line.col-xs-12.m-b-15.m-l-15
         h3.post-title-single.col-xs-12.p-l-15.p-b-15 Contact information
         div.col-xs-12
             div.form-group
-                label.col-xs-12.p-l-0 
+                label.col-xs-12.p-l-0
                     |Please let us know how to contact you to follow up.
                 div.col-sm-6.col-xs-12.p-l-0.p-b-20
-                    input.form-control(placeholder='First Name')
+                    input.form-control(placeholder='First Name' type='text' name='firstName' required)
                 div.col-sm-6.col-xs-12.p-l-0.p-b-20
-                    input.form-control(placeholder='Last Name')
+                    input.form-control(placeholder='Last Name' type='text' name='lastName' required)
                 div.col-sm-6.col-xs-12.p-l-0.p-b-20
-                    input.form-control(placeholder='Phone')
+                    input.form-control(placeholder='Phone' type='number' name='phone' required)
                 div.col-sm-6.col-xs-12.p-l-0.p-b-20
-                    input.form-control(placeholder='Email' type='email')
+                    input.form-control(placeholder='Email' type='email' name='email' required)
         div.col-xs-12
             div.form-group
-                label.col-xs-12.p-l-0 
+                label.col-xs-12.p-l-0
                     |Have you hired a caregiver in the past?
                 div.col-sm-6.col-xs-12.p-l-0
                     label.radio-inline.p-r-25
-                        input(type='radio' name='optLastQuestion')
+                        input(type='radio' name='optLastQuestion' value='Yes')
                         |Yes
                     label.radio-inline
-                        input(type='radio' name='optLastQuestion')
+                        input(type='radio' name='optLastQuestion' value='No')
                         |No
         div.col-xs-12.p-t-35.p-r-30.p-b-40
-            a.btn-submit.button.col-sm-2.col-xs-12.text-center Submit
+            input.btn.btn-default.btn-input.m-b-40.col-xs-12.col-sm-3(type='submit', value='Submit')

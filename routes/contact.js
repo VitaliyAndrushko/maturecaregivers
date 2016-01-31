@@ -30,7 +30,9 @@ router.post('/send', function(req, res, next) {
             res.redirect('/');
         } else {
             console.log('Message Sent: ' + info.response);
-            res.redirect('/');
+            // res.redirect('/');
+            res.render('contact', { title: 'Contact', success: true });
+
         }
     });
 
