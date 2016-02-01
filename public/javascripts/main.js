@@ -16,4 +16,8 @@ $(document).ready(function(){
 	if ( $('#contact-modal').attr('data-success') === 'success' ) {
 		$('#contact-modal').modal('show');
 	}
+
+	if ( $('#find-modal').attr('data-success') === 'success' ) {
+		$('#find-modal').modal('show');
+	}
 });
