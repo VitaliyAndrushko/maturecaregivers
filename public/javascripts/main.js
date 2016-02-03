@@ -13,6 +13,8 @@ $(document).ready(function(){
 		startingSlide: 0
 	});
 
+	$('.phone').mask('000-000-0000');
+
 	if ( $('#contact-modal').attr('data-success') === 'success' ) {
 		$('#contact-modal').modal('show');
 	}
