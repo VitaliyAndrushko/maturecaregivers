@@ -1,0 +1,24 @@
+.affiliations {
+    h3 {
+        display: inline-block;
+        color: $title-second;
+        float: left;
+    }
+    a {
+        display: inline-block;
+        img {
+            max-width: 50%;
+            margin-left: 10%;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .affiliations {
+        a {
+            margin: 1% 0 10% 0;
+            img {
+                margin-left: 0;
+            }
+        }
+    }
+}

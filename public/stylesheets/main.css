@@ -749,6 +749,21 @@ footer {
 @media screen and (max-width: 768px) {
   footer {
     margin-bottom: 0; } }
+.affiliations h3 {
+  display: inline-block;
+  color: #db7030;
+  float: left; }
+.affiliations a {
+  display: inline-block; }
+  .affiliations a img {
+    max-width: 50%;
+    margin-left: 10%; }
+
+@media only screen and (max-width: 768px) {
+  .affiliations a {
+    margin: 1% 0 10% 0; }
+    .affiliations a img {
+      margin-left: 0; } }
 /*styles for aside*/
 .aside-block ul.custom-list li {
   border-bottom: 1px solid #e7e7e7;
