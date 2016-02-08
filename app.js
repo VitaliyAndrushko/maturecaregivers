@@ -18,7 +18,11 @@ var findform = require('./routes/findform');
 var users = require('./routes/users');
 
 var app = express();
-module.exports = app.listen(process.env.PORT || 3000)
+module.exports = app.listen(process.env.PORT || 3000);
+
+var request = require('request'),
+    customRequest = request.defaults({'proxy': process.env.FIXIE_URL}),
+    customRequest.get("http://www.maturecaregivers.com");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
