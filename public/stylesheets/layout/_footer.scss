@@ -38,5 +38,23 @@ footer {
 @media screen and (max-width: 768px) {
     footer {
         margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: center;
+        position: relative;
+        .footer-nav {
+            position: absolute;
+            top: 10px;
+            left: calc(50% - 173px);
+            width: inherit;
+            li a {
+                font-size: 12px;
+                margin-left:38px;
+                font-family: $font-main;
+                font-weight: 200;
+            }
+        }
+        .copyright {
+            margin-top: 38px;
+        }
     }
 }

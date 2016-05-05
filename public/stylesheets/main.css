@@ -748,7 +748,22 @@ footer {
 
 @media screen and (max-width: 768px) {
   footer {
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+    position: relative; }
+    footer .footer-nav {
+      position: absolute;
+      top: 10px;
+      left: calc(50% - 173px);
+      width: inherit; }
+      footer .footer-nav li a {
+        font-size: 12px;
+        margin-left: 38px;
+        font-family: Arial, sans-serif;
+        font-weight: 200; }
+    footer .copyright {
+      margin-top: 38px; } }
 .affiliations h3 {
   display: inline-block;
   color: #db7030;
