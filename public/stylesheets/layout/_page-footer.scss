@@ -1,4 +1,7 @@
 .affiliations {
+    .n-pad-r{
+      padding-right: 0;
+    }
     h3 {
         display: inline-block;
         color: $title-second;
@@ -7,9 +10,61 @@
     a {
         display: inline-block;
         img {
-            max-width: 50%;
-            margin-left: 10%;
+            width: 120px;
+            margin-left: 20%;
         }
+    }
+    h4 {
+      font-family: Yanone Kaffeesatz, Arial, sans-serif;
+      font-size: 22px;
+    }
+    span {
+      font-family: Yanone Kaffeesatz, Arial, sans-serif;
+      font-size: 22px;
+      color: #db7030;
+    }
+
+    p {
+      line-height: 20px;
+    }
+    .inline-img {
+      margin-left: 5px;
+      margin-bottom: 5px;
+      vertical-align: middle;
+    }
+    .button {
+      width: 220px;
+      float: right;
+      line-height: 40px;
+      padding: 5px 15px;
+      background-color: #4e4e4e;
+      color: #f7f7f7;
+      font-family: Yanone Kaffeesatz, Arial, sans-serif;
+      font-size: 26px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px #262626;
+      text-decoration: none;
+      border-radius: 0;
+      border-top: 3px solid #6e6e6e;
+      border-bottom: 3px solid #6e6e6e;
+      text-align: -webkit-center;
+   }
+   .button-img{
+     margin-left: 5px;
+     margin-bottom: 5px;
+     width: 20px;
+     height: 20px;
+   }
+}
+
+@media only screen and (max-width: 1205px) {
+    .affiliations {
+      a {
+          img {
+              width: 100px;
+              margin-left: 10%;
+          }
+      }
     }
 }
 @media only screen and (max-width: 768px) {
@@ -17,8 +72,20 @@
         a {
             margin: 1% 0 10% 0;
             img {
-                margin-left: 0;
+                // margin-left: 0;
             }
         }
+        .info{
+          width: 90%;
+        }
+        .button {
+          float: left;
+       }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .col-xs-5{
+      padding-left: 0;
     }
 }
