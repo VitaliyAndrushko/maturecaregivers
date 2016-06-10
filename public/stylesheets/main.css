@@ -820,8 +820,12 @@ footer {
     margin: 1% 0 10% 0; }
   .affiliations .info {
     width: 90%; }
+  .affiliations .button-container {
+    padding-right: 45px; }
   .affiliations .button {
-    float: left; } }
+    width: 100%;
+    float: none;
+    clear: both; } }
 @media only screen and (max-width: 550px) {
   .col-xs-5 {
     padding-left: 0; } }

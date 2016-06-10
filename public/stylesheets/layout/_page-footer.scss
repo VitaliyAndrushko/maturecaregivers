@@ -78,8 +78,13 @@
         .info{
           width: 90%;
         }
+        .button-container{
+          padding-right: 45px;
+        }
         .button {
-          float: left;
+          width: 100%;
+          float: none;
+          clear: both;
        }
     }
 }
