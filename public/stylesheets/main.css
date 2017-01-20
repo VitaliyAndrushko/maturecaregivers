@@ -607,10 +607,6 @@ btn-main-arrow-right, .welcome-block .welcome-btn .icon-arrow-rigth {
   display: table-cell;
   float: left;
   margin-right: 20px; }
-  
-.img-container-contact {
-  text-align: center;
-}
 
 .content a.zoom {
   display: block; }
@@ -929,15 +925,16 @@ footer {
   color: inherit;
   font-size: 15px; }
 
-#google-map {
-  margin-bottom: 40px;
-  padding: 6px 6px 6px 6px;
-  border: 1px solid #d1d1d1; }
-  #google-map small {
-    color: #0000FF;
-    text-align: left; }
-    #google-map small:hover {
-      text-decoration: underline; }
+.img-container-contact {
+  height: auto;
+  width: 100%;
+  display: table-cell;
+  margin-right: 20px; }
+  .img-container-contact .box-img-contact {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .page-title-findform .page-title-content {
   margin: 0 auto;
