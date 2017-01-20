@@ -160,41 +160,6 @@ h2.bold-title-item {
   font-weight: bold;
   line-height: 18px; }
 
-/*using for embedded video*/
-iframe.video-content {
-  width: 560px;
-  height: 315px; }
-
-@media screen and (max-width: 990px) {
-  iframe.video-content {
-  width: 426px;
-  height: 240px; }
-}
-
-@media screen and (max-width: 767px) {
-  iframe.video-content {
-  width: 640px;
-  height: 360px; }
-}
-
-@media screen and (max-width: 640px) {
-  iframe.video-content {
-  width: 426px;
-  height: 240px; }
-}
-
-@media screen and (max-width: 414px) {
-  iframe.video-content {
-  width: 340px;
-  height: 190px; }
-}
-
-@media screen and (max-width: 320px) {
-  iframe.video-content {
-  width: 290px;
-  height: 163px; }
-}
-
 .btn.text-left {
   text-align: left; }
 
