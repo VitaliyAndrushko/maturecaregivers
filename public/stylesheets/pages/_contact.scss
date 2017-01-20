@@ -1,12 +1,24 @@
-#google-map {
-    margin-bottom: 40px;
-    padding: 6px 6px 6px 6px;
-    border: 1px solid #d1d1d1;
-    small {
-        color: #0000FF;
-        text-align: left;
-        &:hover {
-            text-decoration: underline;
-        }
+// #google-map {
+//     margin-bottom: 40px;
+//     padding: 6px 6px 6px 6px;
+//     border: 1px solid #d1d1d1;
+//     small {
+//         color: #0000FF;
+//         text-align: left;
+//         &:hover {
+//             text-decoration: underline;
+//         }
+//     }
+// }
+.img-container-contact{
+    height: auto;
+    width: 100%;
+    display: table-cell;    
+    margin-right: 20px;
+    .box-img-contact {
+        margin-bottom: 20px;
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }

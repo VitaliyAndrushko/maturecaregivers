@@ -21,7 +21,7 @@ block content
             |We welcome communication with you in whichever way you'd prefer. You may &nbsp
             a(href="/findform") fill out the questionnaire
             |&nbsp about the type of care you're seeking, call us at (888) 320-6700,
-            |visit us at our main office in Waltham, MA or our regional offices,
+            |visit us in Boston (Waltham, MA), New York or our other regional offices,
             |or fill out the simple form below.
 
         form#contact_form.col-xs-10.col-xs-offset-1(method='post', action='contact/send')
@@ -49,36 +49,40 @@ block content
         .separator-line.col-xs-12.m-b-15.p-xs-15.visible-xs
 
     .map-info-block.col-xs-12.col-sm-6
-        .map-block
-            h3.post-title-single.m-b-20 Locate Us With Ease
-            #google-map
-                iframe(width='100%', height='245', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=204+Second+Avenue,+Waltham,+MA+02451&aq=&sll=41.767215,-71.685791&sspn=2.245191,4.949341&ie=UTF8&hq=&hnear=204+2nd+Ave,+Waltham,+Massachusetts+02451&ll=42.393566,-71.26471&spn=0.017369,0.038667&t=m&z=14&output=embed')
-                br
-                small
-                    a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=204+Second+Avenue,+Waltham,+MA+02451&aq=&sll=41.767215,-71.685791&sspn=2.245191,4.949341&ie=UTF8&hq=&hnear=204+2nd+Ave,+Waltham,+Massachusetts+02451&ll=42.393566,-71.26471&spn=0.017369,0.038667&t=m&z=14', style='color:#0000FF;text-align:left') View Larger Map
-
-        .separator-line.m-b-40
-
-        .contact-info-block.m-b-20
+        .contact-info-block.m-b-40
             h3.post-title-single Contact Info
-            p Headquartered in Waltham, MA. Caregivers available across U.S.
+            p Offices in Boston (Waltham, MA) and New York. Caregivers available across U.S., supervised by Local Care Coordinators. 
             .one-fourth
                 p
-                    strong Main Office:
+                    strong Boston Office:
                     br
                     |204 Second Avenue
                     br
-                    |Waltham, MA
-                p
-                    strong Phone:
-                    |&nbsp (888) 320-6700
+                    |Waltham, MA 02451
                     br
-                    strong Fax:
-                    |&nbsp (781) 998-0754
+                    |Phone (888) 320-6700
+                p
+                    strong New York Office:
+                    br
+                    |450 Lexigton Ave.
+                    br
+                    |New York, NY 10017
+                    br
+                    |Phone (888) 320-6700                    
                 p
                     strong E-mail:
                     br
-                    |support@maturecaregivers.com
+                    |support@maturecaregivers.com        
+
+        .separator-line.m-b-40
+
+        .map-block.m-b-40
+            h3.post-title-single.m-b-20 Mature Caregivers In 50 States
+            p Vetted, trained and certified through our 10-point credentialing process.
+            div.img-container-contact
+                img.img-responsive.box-img-contact(src='/images/imgpsh_fullsize.png', alt='Image Description')
+
+        
     .modal#contact-modal.fade(tabindex='-1', role='dialog', data-success=(success === true ? 'success' : ''))
         .modal-dialog
             .modal-content
