@@ -25,7 +25,7 @@ a {
     text-decoration: none; }
 
 p.description {
-  text-align: justify; }
+  text-align: left; }
 
 /*using for nav-bar menu items*/
 menu-styles, .bs-navbar .navbar-nav li a {
