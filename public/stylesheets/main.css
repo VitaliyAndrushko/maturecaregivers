@@ -936,6 +936,11 @@ footer {
     max-width: 100%;
     height: auto; }
 
+.map-info-block .separator-line {
+  display: none; }
+.map-info-block .map-block {
+  display: none; }
+
 .page-title-findform .page-title-content {
   margin: 0 auto;
   height: 40px;
@@ -951,6 +956,19 @@ footer {
 
   form.findform {
     padding-top: 15px; } }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 * {
   box-sizing: border-box;
   margin: 0;
